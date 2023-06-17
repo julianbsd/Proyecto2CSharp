@@ -8,4 +8,4 @@ C:\Users\bigsl\Documents\UPSO\2023\C#\Proyecto2\obj\Debug\Proyecto2.csproj.Gener
 C:\Users\bigsl\Documents\UPSO\2023\C#\Proyecto2\obj\Debug\Proyecto2.csproj.CoreCompileInputs.cache
 C:\Users\bigsl\Documents\UPSO\2023\C#\Proyecto2\obj\Debug\Proyecto2.exe
 C:\Users\bigsl\Documents\UPSO\2023\C#\Proyecto2\obj\Debug\Proyecto2.pdb
-C:\Users\bigsl\Documents\UPSO\2023\C#\Proyecto2\obj\Debug\Proyecto2.Form1.resources
+C:\Users\bigsl\Documents\UPSO\2023\C#\Proyecto2\obj\Debug\Proyecto2.FormPrincipal.resources

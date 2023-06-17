@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto2
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
         }
@@ -76,6 +76,36 @@ namespace Proyecto2
             {
                 listaTabsAlta.Visible = false;
             }
+        }
+
+        private void btnEliminarMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            listaTabsMenu.SelectedTab = tabMenuPrincipal;
+        }
+
+        private void btnEliminarVehiculo_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show($"El vehiculo fue eliminado con exito ");
+        }
+
+        private void btnMenuEscanear_Click(object sender, EventArgs e)
+        {
+            listaTabsMenu.SelectedTab = tabEscanearVehiculos;
+        }
+
+        private void btnMenuMostrarCarga_Click(object sender, EventArgs e)
+        {
+            listaTabsMenu.SelectedTab = tabCargaVehiculos;
+        }
+
+        private void btnEscanearVolverMenu_Click(object sender, EventArgs e)
+        {
+            listaTabsMenu.SelectedTab = tabMenuPrincipal;
+        }
+
+        private void btnCargaVolverMenu_Click(object sender, EventArgs e)
+        {
+            listaTabsMenu.SelectedTab = tabMenuPrincipal;
         }
     }
 }
