@@ -107,5 +107,35 @@ namespace Proyecto2
         {
             listaTabsMenu.SelectedTab = tabMenuPrincipal;
         }
+
+        private void radiobtnCargaOpcionTesla_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radiobtnCargaOpcionTesla.Checked)
+            {
+                listaTabsCarga.Visible = true;
+                listaTabsCarga.SelectedTab = tabCargaTesla;
+            }
+            else
+            {
+                listaTabsCarga.Visible = false;
+            }
+        }
+
+        private void radiobtnEliminarOpcionSpaceX_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void radiobtnCargaOpcionSpaceX_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radiobtnCargaOpcionSpaceX.Checked)
+            {
+                listaTabsCarga.Visible = true;
+                listaTabsCarga.SelectedTab = tabCargaSpaceX;
+            }
+            else
+            {
+                listaTabsCarga.Visible = false;
+            }
+        }
     }
 }
