@@ -13,6 +13,8 @@ namespace Proyecto2
 {
     public partial class FormPrincipal : Form
     {
+        List<Tesla> ListaTeslas = new List<Tesla>();
+        //List<SpaceX> ListaSpaceX = new List<SpaceX>();
         public FormPrincipal()
         {
             InitializeComponent();
@@ -141,20 +143,73 @@ namespace Proyecto2
 
         private void btnAltaTeslaGuardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"El vehiculo fue guardado con exito");
-            dropDownModeloTesla.ResetText();
-            textBoxAñoTesla.Clear();
-            textBoxKilometrajeTesla.Clear();
-            textBoxColorTesla.Clear();
-            textBoxDueñoTesla.Clear();
+            string modelo = dropDownModeloTesla.Text;
+            Int32.TryParse(textBoxAnioTesla.Text, out int anio);
+            Double.TryParse(textBoxKmActualTesla.Text, out double kmActual);
+            string color = textBoxColorTesla.Text;
+            string duenio = textBoxDuenioTesla.Text;
+
+            if (anio < 2012 || kmActual <= 0 || String.IsNullOrEmpty(modelo) || string.IsNullOrEmpty(color) || string.IsNullOrEmpty(duenio))
+            {
+                string error = "Error: ";
+
+                if (String.IsNullOrEmpty(modelo))
+                {
+                    error += "\n-Seleccione un modelo";
+                }
+                if (anio < 2012)
+                {
+                    error += "\n-Año no valido";
+                }
+                if (kmActual <= 0)
+                {
+                    error += "\n-Kilometraje no valido";
+                }
+                if (string.IsNullOrEmpty(color))
+                {
+                    error += "\n-Color no valido";
+                }
+                if (string.IsNullOrEmpty(duenio))
+                {
+                    error += "\n-Dueño no valido";
+                }
+
+                MessageBox.Show(error);
+            }
+
+            else
+            {
+                if (modelo == "Modelo X")
+                {
+                    ModeloX NuevoTesla = new ModeloX(anio, kmActual, color, duenio);
+                    ListaTeslas.Add(NuevoTesla);
+                }
+                else if (modelo == "Modelo S")
+                {
+                    ModeloS NuevoTesla = new ModeloS(anio, kmActual, color, duenio);
+                    ListaTeslas.Add(NuevoTesla);
+                }
+                else if (modelo == "Cybertruck")
+                {
+                    Cybertruck NuevoTesla = new Cybertruck(anio, kmActual, color, duenio);
+                    ListaTeslas.Add(NuevoTesla);
+                }
+
+                MessageBox.Show($"El vehiculo fue guardado con exito");
+                dropDownModeloTesla.ResetText();
+                textBoxAnioTesla.Clear();
+                textBoxKmActualTesla.Clear();
+                textBoxColorTesla.Clear();
+                textBoxDuenioTesla.Clear();
+            }
         }
         private void btnAltaTeslaLimpiar_Click(object sender, EventArgs e)
         {
             dropDownModeloTesla.ResetText();
-            textBoxAñoTesla.Clear();
-            textBoxKilometrajeTesla.Clear();
+            textBoxAnioTesla.Clear();
+            textBoxKmActualTesla.Clear();
             textBoxColorTesla.Clear();
-            textBoxDueñoTesla.Clear();
+            textBoxDuenioTesla.Clear();
         }
 
         private void btnAltaSpaceXGuardar_Click(object sender, EventArgs e)
