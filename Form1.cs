@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Proyecto2
 {
@@ -136,6 +137,42 @@ namespace Proyecto2
             {
                 listaTabsCarga.Visible = false;
             }
+        }
+
+        private void btnAltaTeslaGuardar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"El vehiculo fue guardado con exito");
+            dropDownModeloTesla.ResetText();
+            textBoxAñoTesla.Clear();
+            textBoxKilometrajeTesla.Clear();
+            textBoxColorTesla.Clear();
+            textBoxDueñoTesla.Clear();
+        }
+        private void btnAltaTeslaLimpiar_Click(object sender, EventArgs e)
+        {
+            dropDownModeloTesla.ResetText();
+            textBoxAñoTesla.Clear();
+            textBoxKilometrajeTesla.Clear();
+            textBoxColorTesla.Clear();
+            textBoxDueñoTesla.Clear();
+        }
+
+        private void btnAltaSpaceXGuardar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"El vehiculo fue guardado con exito");
+            dropDownModeloSpaceX.ResetText();
+            textBoxAñoSpaceX.Clear();
+            textBoxHorasSpaceX.Clear();
+            textBoxColorSpaceX.Clear();
+            textBoxEmpresaSpaceX.Clear();
+        }
+        private void btnAltaSpaceXLimpiar_Click(object sender, EventArgs e)
+        {
+            dropDownModeloSpaceX.ResetText();
+            textBoxAñoSpaceX.Clear();
+            textBoxHorasSpaceX.Clear();
+            textBoxColorSpaceX.Clear();
+            textBoxEmpresaSpaceX.Clear();
         }
     }
 }
