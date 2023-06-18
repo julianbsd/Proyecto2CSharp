@@ -88,7 +88,78 @@ namespace Proyecto2
 
         private void btnEliminarVehiculo_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show($"El vehiculo fue eliminado con exito ");
+            string duenioABuscar = textBoxEliminarDueño.Text;
+
+            // Si esta seleccionada la opcion Tesla
+            if (radiobtnEliminarOpcionTesla.Checked)
+            {
+                if (ListaTeslas.Count > 0)
+                {
+                    int indexTesla = 0;
+                    bool encontrado = false;
+
+                    for (int index = 0; index < ListaTeslas.Count; index++)
+                    {
+                        if (ListaTeslas[index].Duenio == duenioABuscar)
+                        {
+                            encontrado = true;
+                            indexTesla = index;
+                            break;
+                        }
+                    }
+
+                    if (encontrado)
+                    {
+                        ListaTeslas.RemoveAt(indexTesla);
+                        MessageBox.Show("El Tesla fue eliminado con exito");
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Tesla no fue encontrado");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Error: No hay Teslas dados de alta");
+                }
+            }
+
+            // Si esta seleccionada la opcion SpaceX
+            else
+            {
+                if (ListaSpaceX.Count > 0)
+                {
+                    int indexSpaceX = 0;
+                    bool encontrado = false;
+
+                    for (int index = 0; index < ListaSpaceX.Count; index++)
+                    {
+                        if (ListaSpaceX[index].EmpresaDuenia == duenioABuscar)
+                        {
+                            encontrado = true;
+                            indexSpaceX = index;
+                            break;
+                        }
+                    }
+
+                    if (encontrado)
+                    {
+                        ListaSpaceX.RemoveAt(indexSpaceX);
+                        MessageBox.Show("El SpaceX fue eliminado con exito");
+                    }
+                    else
+                    {
+                        MessageBox.Show("El SpaceX no fue encontrado");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Error: No hay SpaceX dados de alta");
+                }
+            }
+
         }
 
         private void btnMenuEscanear_Click(object sender, EventArgs e)
