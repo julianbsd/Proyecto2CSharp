@@ -10,13 +10,13 @@ namespace Proyecto2
     internal class Tesla
     {
         private int anio;
-        private double kmActual;
+        private int kmActual;
         private string color;
         private string duenio;
-        private double service;
+        private int service;
 
         //-------------------- Constructor --------------------
-        public Tesla(int anio, double kmActual, string color, string duenio, double service = 0)
+        public Tesla(int anio, int kmActual, string color, string duenio, int service = 0)
         {
             this.anio = anio;
             this.kmActual = kmActual;
@@ -28,10 +28,10 @@ namespace Proyecto2
 
         //---------------- Metodos setters y getters ----------------
         public int Anio { get => anio; }
-        public double KmActual { get => kmActual; set => kmActual = value; }
+        public int KmActual { get => kmActual; set => kmActual = value; }
         public string Color { get => color; set => color = value; }
         public string Duenio { get => duenio; set => duenio = value; }
-        public double Service { get => service; set => service = value; }
+        public int Service { get => service; set => service = value; }
 
         //--------------------- Escaneo ---------------------
         public string Escaneo()
@@ -41,15 +41,15 @@ namespace Proyecto2
             int cantControlSistemaNav = 0;
             int cantControlSistemaTrac = 0;
             int cantControlmotor = 0;
-            double kilometraje = kmActual;
+            int kilometraje = kmActual;
 
             //cantidad de Service
-            double cantService = Math.Round(kmActual / service);
+            int cantService = kmActual / service;
 
             //Control Cinturones de Seguridad: cada 1000km
             if (kilometraje >= 1000)
             {
-                double kilometraje2 = kmActual;
+                int kilometraje2 = kmActual;
                 while (kilometraje2 >= 1000)
                 {
                     cantControlCinturones += 1;
@@ -60,7 +60,7 @@ namespace Proyecto2
             //Control de Baterias: cada 2000km
             if (kilometraje >= 2000)
             {
-                double kilometraje2 = kmActual;
+                int kilometraje2 = kmActual;
                 while (kilometraje2 >= 2000)
                 {
                     cantControlBaterias += 1;
@@ -71,7 +71,7 @@ namespace Proyecto2
             //Control del Sistema de Navegacion: 2500km
             if (kilometraje >= 2500)
             {
-                double kilometraje2 = kmActual;
+                int kilometraje2 = kmActual;
                 while (kilometraje2 >= 2500)
                 {
                     cantControlSistemaNav += 1;
@@ -82,7 +82,7 @@ namespace Proyecto2
             //Control del Sistema de Traccion: cada 3000km.
             if (kilometraje >= 3000)
             {
-                double kilometraje2 = kmActual;
+                int kilometraje2 = kmActual;
                 while (kilometraje2 >= 3000)
                 {
                     cantControlSistemaTrac += 1;
@@ -93,7 +93,7 @@ namespace Proyecto2
             //Control del motor: cada 3000km.
             if (kilometraje >= 3000)
             {
-                double kilometraje2 = kmActual;
+                int kilometraje2 = kmActual;
                 while (kilometraje2 >= 3000)
                 {
                     cantControlmotor += 1;
@@ -101,7 +101,7 @@ namespace Proyecto2
                 }
             }
 
-            return $"Se realizarion {cantService} Service:\n" +
+            return $"Se realizaron {cantService} Service:\n" +
                    $"\tControles de Cinturones de Seguridad = {cantControlCinturones}\n" +
                    $"\tControles de Baterias = {cantControlBaterias}\n" +
                    $"\tControles del Sistema de Navegacion = {cantControlSistemaNav}\n" +
@@ -111,27 +111,27 @@ namespace Proyecto2
     }
     internal class ModeloX : Tesla
     {
-        private double autonomia;
+        private int autonomia;
         private int asientos;
         //-------------------- Constructor --------------------
-        public ModeloX(int anio, double kmActual, string color, string duenio, double autonomia = 560, int asientos = 7, double service = 1000) : base(anio, kmActual, color, duenio, service)
+        public ModeloX(int anio, int kmActual, string color, string duenio, int autonomia = 560, int asientos = 7, int service = 1000) : base(anio, kmActual, color, duenio, service)
         {
             this.autonomia = autonomia;
             this.asientos = asientos;
         }
 
         //---------------- Metodos getters ----------------
-        public double Autonomia { get => autonomia; }
+        public int Autonomia { get => autonomia; }
         public int Asientos { get => asientos; }
     }
 
     internal class ModeloS : Tesla
     {
-        private double autonomia;
+        private int autonomia;
         private int asientos;
 
         //-------------------- Constructor --------------------
-        public ModeloS(int anio, double kmActual, string color, string duenio, double autonomia = 650, int asientos = 5, double service = 2000) : base(anio, kmActual, color, duenio, service)
+        public ModeloS(int anio, int kmActual, string color, string duenio, int autonomia = 650, int asientos = 5, int service = 2000) : base(anio, kmActual, color, duenio, service)
         {
             this.autonomia = autonomia;
             this.asientos = asientos;
@@ -144,18 +144,18 @@ namespace Proyecto2
     }
     internal class Cybertruck : Tesla
     {
-        private double autonomia;
+        private int autonomia;
         private int asientos;
 
         //-------------------- Constructor --------------------
-        public Cybertruck(int anio, double kmActual, string color, string duenio, double autonomia = 800, int asientos = 6, double service = 3000) : base(anio, kmActual, color, duenio, service)
+        public Cybertruck(int anio, int kmActual, string color, string duenio, int autonomia = 800, int asientos = 6, int service = 3000) : base(anio, kmActual, color, duenio, service)
         {
             this.autonomia = autonomia;
             this.asientos = asientos;
         }
 
         //---------------- Metodos getters ----------------
-        public double Autonomia { get => autonomia; }
+        public int Autonomia { get => autonomia; }
         public int Asientos { get => asientos; }
     }
 }

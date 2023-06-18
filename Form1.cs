@@ -14,7 +14,7 @@ namespace Proyecto2
     public partial class FormPrincipal : Form
     {
         List<Tesla> ListaTeslas = new List<Tesla>();
-        //List<SpaceX> ListaSpaceX = new List<SpaceX>();
+        List<SpaceX> ListaSpaceX = new List<SpaceX>();
         public FormPrincipal()
         {
             InitializeComponent();
@@ -145,11 +145,11 @@ namespace Proyecto2
         {
             string modelo = dropDownModeloTesla.Text;
             Int32.TryParse(textBoxAnioTesla.Text, out int anio);
-            Double.TryParse(textBoxKmActualTesla.Text, out double kmActual);
+            Int32.TryParse(textBoxKmActualTesla.Text, out int kmActual);
             string color = textBoxColorTesla.Text;
             string duenio = textBoxDuenioTesla.Text;
 
-            if (anio < 2012 || kmActual <= 0 || String.IsNullOrEmpty(modelo) || string.IsNullOrEmpty(color) || string.IsNullOrEmpty(duenio))
+            if (anio < 2012 || anio > 2023 || kmActual <= 0 || String.IsNullOrEmpty(modelo) || string.IsNullOrEmpty(color) || string.IsNullOrEmpty(duenio))
             {
                 string error = "Error: ";
 
@@ -157,7 +157,7 @@ namespace Proyecto2
                 {
                     error += "\n-Seleccione un modelo";
                 }
-                if (anio < 2012)
+                if (anio < 2012 || anio > 2023)
                 {
                     error += "\n-Año no valido";
                 }
@@ -196,7 +196,7 @@ namespace Proyecto2
                 }
 
                 MessageBox.Show($"El vehiculo fue guardado con exito");
-                dropDownModeloTesla.ResetText();
+                dropDownModeloTesla.SelectedIndex = -1;
                 textBoxAnioTesla.Clear();
                 textBoxKmActualTesla.Clear();
                 textBoxColorTesla.Clear();
@@ -205,7 +205,7 @@ namespace Proyecto2
         }
         private void btnAltaTeslaLimpiar_Click(object sender, EventArgs e)
         {
-            dropDownModeloTesla.ResetText();
+            dropDownModeloTesla.SelectedIndex = -1;
             textBoxAnioTesla.Clear();
             textBoxKmActualTesla.Clear();
             textBoxColorTesla.Clear();
@@ -214,18 +214,66 @@ namespace Proyecto2
 
         private void btnAltaSpaceXGuardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"El vehiculo fue guardado con exito");
-            dropDownModeloSpaceX.ResetText();
-            textBoxAñoSpaceX.Clear();
-            textBoxHorasSpaceX.Clear();
-            textBoxColorSpaceX.Clear();
-            textBoxEmpresaSpaceX.Clear();
+            string modelo = dropDownModeloSpaceX.Text;
+            Int32.TryParse(textBoxAnioSpaceX.Text, out int anio);
+            Int32.TryParse(textBoxHsVueloActualSpaceX.Text, out int hsVueloActual);
+            string color = textBoxColorSpaceX.Text;
+            string duenio = textBoxEmpresaSpaceX.Text;
+
+            if (anio < 2012 || anio > 2023 || hsVueloActual <= 0 || String.IsNullOrEmpty(modelo) || string.IsNullOrEmpty(color) || string.IsNullOrEmpty(duenio))
+            {
+                string error = "Error: ";
+
+                if (String.IsNullOrEmpty(modelo))
+                {
+                    error += "\n-Seleccione un modelo";
+                }
+                if (anio < 2012 || anio > 2023)
+                {
+                    error += "\n-Año no valido";
+                }
+                if (hsVueloActual <= 0)
+                {
+                    error += "\n-Kilometraje no valido";
+                }
+                if (string.IsNullOrEmpty(color))
+                {
+                    error += "\n-Color no valido";
+                }
+                if (string.IsNullOrEmpty(duenio))
+                {
+                    error += "\n-Dueño no valido";
+                }
+
+                MessageBox.Show(error);
+            }
+
+            else
+            {
+                if (modelo == "Starship")
+                {
+                    Starship NuevoSpaceX = new Starship(anio, hsVueloActual, color, duenio);
+                    ListaSpaceX.Add(NuevoSpaceX);
+                }
+                else if (modelo == "Falcon 9")
+                {
+                    Falcon9 NuevoSpaceX = new Falcon9(anio, hsVueloActual, color, duenio);
+                    ListaSpaceX.Add(NuevoSpaceX);
+                }
+
+                MessageBox.Show($"El vehiculo fue guardado con exito");
+                dropDownModeloSpaceX.SelectedIndex = -1;
+                textBoxAnioSpaceX.Clear();
+                textBoxHsVueloActualSpaceX.Clear();
+                textBoxColorSpaceX.Clear();
+                textBoxEmpresaSpaceX.Clear();
+            }
         }
         private void btnAltaSpaceXLimpiar_Click(object sender, EventArgs e)
         {
-            dropDownModeloSpaceX.ResetText();
-            textBoxAñoSpaceX.Clear();
-            textBoxHorasSpaceX.Clear();
+            dropDownModeloSpaceX.SelectedIndex = -1;
+            textBoxAnioSpaceX.Clear();
+            textBoxHsVueloActualSpaceX.Clear();
             textBoxColorSpaceX.Clear();
             textBoxEmpresaSpaceX.Clear();
         }

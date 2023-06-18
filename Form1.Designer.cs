@@ -51,20 +51,20 @@
             this.labelDueñoTesla = new System.Windows.Forms.Label();
             this.labelColorTesla = new System.Windows.Forms.Label();
             this.labelKilometrajeTesla = new System.Windows.Forms.Label();
-            this.labelAñoTesla = new System.Windows.Forms.Label();
+            this.labelAnioTesla = new System.Windows.Forms.Label();
             this.tabAltaSpaceX = new System.Windows.Forms.TabPage();
             this.btnAltaSpaceXLimpiar = new System.Windows.Forms.Button();
             this.btnAltaSpaceXGuardar = new System.Windows.Forms.Button();
             this.textBoxEmpresaSpaceX = new System.Windows.Forms.TextBox();
             this.textBoxColorSpaceX = new System.Windows.Forms.TextBox();
-            this.textBoxHorasSpaceX = new System.Windows.Forms.TextBox();
-            this.textBoxAñoSpaceX = new System.Windows.Forms.TextBox();
+            this.textBoxHsVueloActualSpaceX = new System.Windows.Forms.TextBox();
+            this.textBoxAnioSpaceX = new System.Windows.Forms.TextBox();
             this.dropDownModeloSpaceX = new System.Windows.Forms.ComboBox();
             this.labelModeloSpaceX = new System.Windows.Forms.Label();
             this.labelEmpresaSpaceX = new System.Windows.Forms.Label();
             this.labelColorSpaceX = new System.Windows.Forms.Label();
             this.labelHorasSpaceX = new System.Windows.Forms.Label();
-            this.labelAñoSpaceX = new System.Windows.Forms.Label();
+            this.labelAnioSpaceX = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.labelAltaTipoVehiculo = new System.Windows.Forms.Label();
@@ -279,7 +279,7 @@
             this.tabAltaTesla.Controls.Add(this.labelDueñoTesla);
             this.tabAltaTesla.Controls.Add(this.labelColorTesla);
             this.tabAltaTesla.Controls.Add(this.labelKilometrajeTesla);
-            this.tabAltaTesla.Controls.Add(this.labelAñoTesla);
+            this.tabAltaTesla.Controls.Add(this.labelAnioTesla);
             this.tabAltaTesla.Location = new System.Drawing.Point(4, 5);
             this.tabAltaTesla.Name = "tabAltaTesla";
             this.tabAltaTesla.Padding = new System.Windows.Forms.Padding(3);
@@ -392,17 +392,17 @@
             this.labelKilometrajeTesla.TabIndex = 13;
             this.labelKilometrajeTesla.Text = "Kilometraje actual:";
             // 
-            // labelAñoTesla
+            // labelAnioTesla
             // 
-            this.labelAñoTesla.AutoSize = true;
-            this.labelAñoTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAñoTesla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelAñoTesla.Location = new System.Drawing.Point(45, 115);
-            this.labelAñoTesla.Name = "labelAñoTesla";
-            this.labelAñoTesla.Size = new System.Drawing.Size(43, 20);
-            this.labelAñoTesla.TabIndex = 12;
-            this.labelAñoTesla.Text = "Año:";
-            this.labelAñoTesla.Click += new System.EventHandler(this.label3_Click);
+            this.labelAnioTesla.AutoSize = true;
+            this.labelAnioTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnioTesla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelAnioTesla.Location = new System.Drawing.Point(45, 115);
+            this.labelAnioTesla.Name = "labelAnioTesla";
+            this.labelAnioTesla.Size = new System.Drawing.Size(43, 20);
+            this.labelAnioTesla.TabIndex = 12;
+            this.labelAnioTesla.Text = "Año:";
+            this.labelAnioTesla.Click += new System.EventHandler(this.label3_Click);
             // 
             // tabAltaSpaceX
             // 
@@ -411,14 +411,14 @@
             this.tabAltaSpaceX.Controls.Add(this.btnAltaSpaceXGuardar);
             this.tabAltaSpaceX.Controls.Add(this.textBoxEmpresaSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.textBoxColorSpaceX);
-            this.tabAltaSpaceX.Controls.Add(this.textBoxHorasSpaceX);
-            this.tabAltaSpaceX.Controls.Add(this.textBoxAñoSpaceX);
+            this.tabAltaSpaceX.Controls.Add(this.textBoxHsVueloActualSpaceX);
+            this.tabAltaSpaceX.Controls.Add(this.textBoxAnioSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.dropDownModeloSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.labelModeloSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.labelEmpresaSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.labelColorSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.labelHorasSpaceX);
-            this.tabAltaSpaceX.Controls.Add(this.labelAñoSpaceX);
+            this.tabAltaSpaceX.Controls.Add(this.labelAnioSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.label2);
             this.tabAltaSpaceX.Controls.Add(this.button8);
             this.tabAltaSpaceX.Location = new System.Drawing.Point(4, 5);
@@ -462,19 +462,19 @@
             this.textBoxColorSpaceX.Size = new System.Drawing.Size(190, 22);
             this.textBoxColorSpaceX.TabIndex = 30;
             // 
-            // textBoxHorasSpaceX
+            // textBoxHsVueloActualSpaceX
             // 
-            this.textBoxHorasSpaceX.Location = new System.Drawing.Point(270, 160);
-            this.textBoxHorasSpaceX.Name = "textBoxHorasSpaceX";
-            this.textBoxHorasSpaceX.Size = new System.Drawing.Size(190, 22);
-            this.textBoxHorasSpaceX.TabIndex = 29;
+            this.textBoxHsVueloActualSpaceX.Location = new System.Drawing.Point(270, 160);
+            this.textBoxHsVueloActualSpaceX.Name = "textBoxHsVueloActualSpaceX";
+            this.textBoxHsVueloActualSpaceX.Size = new System.Drawing.Size(190, 22);
+            this.textBoxHsVueloActualSpaceX.TabIndex = 29;
             // 
-            // textBoxAñoSpaceX
+            // textBoxAnioSpaceX
             // 
-            this.textBoxAñoSpaceX.Location = new System.Drawing.Point(270, 115);
-            this.textBoxAñoSpaceX.Name = "textBoxAñoSpaceX";
-            this.textBoxAñoSpaceX.Size = new System.Drawing.Size(190, 22);
-            this.textBoxAñoSpaceX.TabIndex = 28;
+            this.textBoxAnioSpaceX.Location = new System.Drawing.Point(270, 115);
+            this.textBoxAnioSpaceX.Name = "textBoxAnioSpaceX";
+            this.textBoxAnioSpaceX.Size = new System.Drawing.Size(190, 22);
+            this.textBoxAnioSpaceX.TabIndex = 28;
             // 
             // dropDownModeloSpaceX
             // 
@@ -532,16 +532,16 @@
             this.labelHorasSpaceX.TabIndex = 23;
             this.labelHorasSpaceX.Text = "Horas de vuelo actuales:";
             // 
-            // labelAñoSpaceX
+            // labelAnioSpaceX
             // 
-            this.labelAñoSpaceX.AutoSize = true;
-            this.labelAñoSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAñoSpaceX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelAñoSpaceX.Location = new System.Drawing.Point(45, 115);
-            this.labelAñoSpaceX.Name = "labelAñoSpaceX";
-            this.labelAñoSpaceX.Size = new System.Drawing.Size(43, 20);
-            this.labelAñoSpaceX.TabIndex = 22;
-            this.labelAñoSpaceX.Text = "Año:";
+            this.labelAnioSpaceX.AutoSize = true;
+            this.labelAnioSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnioSpaceX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelAnioSpaceX.Location = new System.Drawing.Point(45, 115);
+            this.labelAnioSpaceX.Name = "labelAnioSpaceX";
+            this.labelAnioSpaceX.Size = new System.Drawing.Size(43, 20);
+            this.labelAnioSpaceX.TabIndex = 22;
+            this.labelAnioSpaceX.Text = "Año:";
             // 
             // label2
             // 
@@ -1256,7 +1256,7 @@
         private System.Windows.Forms.Label labelDueñoTesla;
         private System.Windows.Forms.Label labelColorTesla;
         private System.Windows.Forms.Label labelKilometrajeTesla;
-        private System.Windows.Forms.Label labelAñoTesla;
+        private System.Windows.Forms.Label labelAnioTesla;
         private System.Windows.Forms.TextBox textBoxDuenioTesla;
         private System.Windows.Forms.TextBox textBoxColorTesla;
         private System.Windows.Forms.TextBox textBoxKmActualTesla;
@@ -1265,7 +1265,7 @@
         private System.Windows.Forms.Label labelEmpresaSpaceX;
         private System.Windows.Forms.Label labelColorSpaceX;
         private System.Windows.Forms.Label labelHorasSpaceX;
-        private System.Windows.Forms.Label labelAñoSpaceX;
+        private System.Windows.Forms.Label labelAnioSpaceX;
         private System.Windows.Forms.Button btnAltaTeslaLimpiar;
         private System.Windows.Forms.Button btnAltaTeslaGuardar;
         private System.Windows.Forms.Button btnAltaSpaceXLimpiar;
@@ -1322,10 +1322,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.TextBox textBoxAñoSpaceX;
+        private System.Windows.Forms.TextBox textBoxAnioSpaceX;
         private System.Windows.Forms.TextBox textBoxEmpresaSpaceX;
         private System.Windows.Forms.TextBox textBoxColorSpaceX;
-        private System.Windows.Forms.TextBox textBoxHorasSpaceX;
+        private System.Windows.Forms.TextBox textBoxHsVueloActualSpaceX;
         private System.Windows.Forms.ComboBox dropDownModeloSpaceX;
     }
 }
