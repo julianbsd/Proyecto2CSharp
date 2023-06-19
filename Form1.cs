@@ -42,7 +42,28 @@ namespace Proyecto2
 
         private void btnTeslaMasNuevo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"El Tesla mas nuevo es ");
+            if (ListaTeslas.Count > 0)
+            {
+                int indexTeslaMasNuevo = 0;
+
+                for (int index = 0; index < ListaTeslas.Count; index++)
+                {
+                    if (ListaTeslas[index].Anio > ListaTeslas[indexTeslaMasNuevo].Anio)
+                    {
+                        indexTeslaMasNuevo = index;
+                    }
+                }
+
+                string modelo = ListaTeslas[indexTeslaMasNuevo].GetType().Name;
+                string anio = ListaTeslas[indexTeslaMasNuevo].Anio.ToString();
+                string duenio = ListaTeslas[indexTeslaMasNuevo].Duenio;
+
+                MessageBox.Show($"El Tesla mas nuevo es el {modelo} de {duenio} del anio {anio}");
+            }
+            else
+            {
+                MessageBox.Show("Error: No hay Teslas dados de alta");
+            }
         }
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
