@@ -15,7 +15,7 @@ namespace Proyecto2
         private int service;
 
         //-------------------- Constructor --------------------
-        public SpaceX(int anio, int hsVueloActual, string color, string empresaDuenia, int service = 0)
+        public SpaceX(int anio, int hsVueloActual, string color, string empresaDuenia, int service)
         {
             this.anio = anio;
             this.hsVueloActual = hsVueloActual;
@@ -34,38 +34,38 @@ namespace Proyecto2
         //--------------------- Escaneo ---------------------
         public string Escaneo()
         {
-            int cantControlSistemaNav = 0;
-            int cantControlSistemaProp = 0;
-            double hsVuelo = hsVueloActual;
+            int kmControlSistemaNav = 500;
+            int kmControlSistemaProp = 1000;
 
-            //cantidad de Service
-            double cantService = Math.Round(hsVuelo / service);
+            //cantidad de Services
+            int cantServices = hsVueloActual / service;
+            int hsServiceActual;
+            string totalServices = "";
 
-            //Control del Sistema de Propulsion: cada 1000Hs
-            if (hsVuelo >= 1000)
+            int ultimoControlSistemaNav = 0;
+            int ultimoControlSistemaProp = 0;
+
+            for (int numService = 1; numService <= cantServices; numService++)
             {
-                double hsVuelo2 = hsVueloActual;
-                while (hsVuelo2 >= 1000)
+                hsServiceActual = numService * Service;
+                totalServices += $"Service {numService} ({hsServiceActual}hs): ";
+
+                if (hsServiceActual >= kmControlSistemaNav && hsServiceActual - ultimoControlSistemaNav >= kmControlSistemaNav)
                 {
-                    cantControlSistemaProp += 1;
-                    hsVuelo2 -= 1000;
+                    totalServices += "(1)";
+                    ultimoControlSistemaNav = hsServiceActual;
                 }
+
+                if (hsServiceActual >= kmControlSistemaProp && hsServiceActual - ultimoControlSistemaProp >= kmControlSistemaProp)
+                {
+                    totalServices += "(2)";
+                    ultimoControlSistemaProp = hsServiceActual;
+                }
+
+                totalServices +=  "\n";
             }
 
-            //Control del Sistema de Navegacion: cada 500Hs
-            if (hsVuelo >= 500)
-            {
-                double hsVuelo2 = hsVueloActual;
-                while (hsVuelo2 >= 500)
-                {
-                    cantControlSistemaNav += 1;
-                    hsVuelo2 -= 500;
-                }
-            }
-
-            return $"Se realizarion {cantService} Service:\n" +
-                   $"\tControles del Sistema de Propulsion = {cantControlSistemaProp}\n" +
-                   $"\tControles del Sistema de Navegacion = {cantControlSistemaNav}\n";
+            return totalServices;
         }
     }
     internal class Falcon9 : SpaceX

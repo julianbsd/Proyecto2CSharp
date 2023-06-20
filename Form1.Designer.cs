@@ -29,7 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnMenuAltaVehiculos = new System.Windows.Forms.Button();
             this.btnMenuEliminarVehiculos = new System.Windows.Forms.Button();
             this.btnMenuTeslaMasNuevo = new System.Windows.Forms.Button();
@@ -65,8 +77,6 @@
             this.labelColorSpaceX = new System.Windows.Forms.Label();
             this.labelHorasSpaceX = new System.Windows.Forms.Label();
             this.labelAnioSpaceX = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.labelAltaTipoVehiculo = new System.Windows.Forms.Label();
             this.radiobtnAltaOpcionSpaceX = new System.Windows.Forms.RadioButton();
             this.radiobtnAltaOpcionTesla = new System.Windows.Forms.RadioButton();
@@ -80,25 +90,35 @@
             this.radiobtnEliminarOpcionSpaceX = new System.Windows.Forms.RadioButton();
             this.radiobtnEliminarOpcionTesla = new System.Windows.Forms.RadioButton();
             this.tabEscanearVehiculos = new System.Windows.Forms.TabPage();
-            this.btnEscanearBuscarDueño = new System.Windows.Forms.Button();
-            this.textBoxEscanear = new System.Windows.Forms.TextBox();
-            this.labelEscanearNombreDueño = new System.Windows.Forms.Label();
+            this.panelEscanearServicesSpaceX = new System.Windows.Forms.Panel();
+            this.labelControl2SpaceX = new System.Windows.Forms.Label();
+            this.labelControl1SpaceX = new System.Windows.Forms.Label();
+            this.labelControlesSpaceX = new System.Windows.Forms.Label();
+            this.panelEscanearServicesTesla = new System.Windows.Forms.Panel();
+            this.labelControl5Tesla = new System.Windows.Forms.Label();
+            this.labelControl4Tesla = new System.Windows.Forms.Label();
+            this.labelControl3Tesla = new System.Windows.Forms.Label();
+            this.labelControl2Tesla = new System.Windows.Forms.Label();
+            this.labelControl1Tesla = new System.Windows.Forms.Label();
+            this.labelControlesTesla = new System.Windows.Forms.Label();
+            this.btnEscanearBuscarDuenio = new System.Windows.Forms.Button();
+            this.textBoxEscanearDuenio = new System.Windows.Forms.TextBox();
+            this.labelEscanearNombreDuenio = new System.Windows.Forms.Label();
             this.listaTabsEscanear = new System.Windows.Forms.TabControl();
             this.tabEscanearTesla = new System.Windows.Forms.TabPage();
             this.tablaEscanearDatosTesla = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearAnioTesla = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnaEscanearModeloTesla = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearKmTesla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearDuenioTesla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearServicesTesla = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabEscanearSpaceX = new System.Windows.Forms.TabPage();
             this.tablaEscanearDatosSpaceX = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button11 = new System.Windows.Forms.Button();
+            this.ColumnaEscanearAnioSpaceX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearModeloSpaceX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearHsVueloSpaceX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearDuenioSpaceX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaEscanearServicesSpaceX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelEscanearTipoVehiculo = new System.Windows.Forms.Label();
             this.radiobtnEscanearOpcionSpaceX = new System.Windows.Forms.RadioButton();
             this.radiobtnEscanearOpcionTesla = new System.Windows.Forms.RadioButton();
@@ -107,19 +127,8 @@
             this.listaTabsCarga = new System.Windows.Forms.TabControl();
             this.tabCargaTesla = new System.Windows.Forms.TabPage();
             this.tablaCargaDatosTesla = new System.Windows.Forms.DataGridView();
-            this.ColumnaTeslaAño = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaCargaModeloTesla = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaTeslaKilometraje = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaTeslaDueño = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaTeslaServices = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCargaSpaceX = new System.Windows.Forms.TabPage();
             this.tablaCargaDatosSpaceX = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaCargaModeloSpaceX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button5 = new System.Windows.Forms.Button();
             this.labelCargaTipoVehiculo = new System.Windows.Forms.Label();
             this.radiobtnCargaOpcionSpaceX = new System.Windows.Forms.RadioButton();
             this.radiobtnCargaOpcionTesla = new System.Windows.Forms.RadioButton();
@@ -128,6 +137,16 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.logoTesla = new System.Windows.Forms.PictureBox();
             this.logoSpaceX = new System.Windows.Forms.PictureBox();
+            this.ColumnaTeslaAño = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaCargaModeloTesla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaTeslaKilometraje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaTeslaDueño = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaTeslaServices = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaCargaModeloSpaceX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaTabsMenu.SuspendLayout();
             this.tabMenuPrincipal.SuspendLayout();
             this.tabAltaVehiculos.SuspendLayout();
@@ -136,6 +155,8 @@
             this.tabAltaSpaceX.SuspendLayout();
             this.tabEliminarVehiculos.SuspendLayout();
             this.tabEscanearVehiculos.SuspendLayout();
+            this.panelEscanearServicesSpaceX.SuspendLayout();
+            this.panelEscanearServicesTesla.SuspendLayout();
             this.listaTabsEscanear.SuspendLayout();
             this.tabEscanearTesla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablaEscanearDatosTesla)).BeginInit();
@@ -153,9 +174,11 @@
             // 
             // btnMenuAltaVehiculos
             // 
-            this.btnMenuAltaVehiculos.Location = new System.Drawing.Point(245, 110);
+            this.btnMenuAltaVehiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuAltaVehiculos.Location = new System.Drawing.Point(221, 121);
+            this.btnMenuAltaVehiculos.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuAltaVehiculos.Name = "btnMenuAltaVehiculos";
-            this.btnMenuAltaVehiculos.Size = new System.Drawing.Size(220, 55);
+            this.btnMenuAltaVehiculos.Size = new System.Drawing.Size(200, 50);
             this.btnMenuAltaVehiculos.TabIndex = 0;
             this.btnMenuAltaVehiculos.Text = "Dar de alta un vehiculo";
             this.btnMenuAltaVehiculos.UseVisualStyleBackColor = true;
@@ -163,9 +186,11 @@
             // 
             // btnMenuEliminarVehiculos
             // 
-            this.btnMenuEliminarVehiculos.Location = new System.Drawing.Point(580, 110);
+            this.btnMenuEliminarVehiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuEliminarVehiculos.Location = new System.Drawing.Point(486, 121);
+            this.btnMenuEliminarVehiculos.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuEliminarVehiculos.Name = "btnMenuEliminarVehiculos";
-            this.btnMenuEliminarVehiculos.Size = new System.Drawing.Size(220, 55);
+            this.btnMenuEliminarVehiculos.Size = new System.Drawing.Size(200, 50);
             this.btnMenuEliminarVehiculos.TabIndex = 2;
             this.btnMenuEliminarVehiculos.Text = "Eliminar un vehiculo";
             this.btnMenuEliminarVehiculos.UseVisualStyleBackColor = true;
@@ -173,9 +198,11 @@
             // 
             // btnMenuTeslaMasNuevo
             // 
-            this.btnMenuTeslaMasNuevo.Location = new System.Drawing.Point(418, 266);
+            this.btnMenuTeslaMasNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuTeslaMasNuevo.Location = new System.Drawing.Point(365, 248);
+            this.btnMenuTeslaMasNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuTeslaMasNuevo.Name = "btnMenuTeslaMasNuevo";
-            this.btnMenuTeslaMasNuevo.Size = new System.Drawing.Size(220, 55);
+            this.btnMenuTeslaMasNuevo.Size = new System.Drawing.Size(200, 50);
             this.btnMenuTeslaMasNuevo.TabIndex = 3;
             this.btnMenuTeslaMasNuevo.Text = "Mostrar el Tesla mas nuevo";
             this.btnMenuTeslaMasNuevo.UseVisualStyleBackColor = true;
@@ -183,9 +210,11 @@
             // 
             // btnMenuEscanear
             // 
-            this.btnMenuEscanear.Location = new System.Drawing.Point(154, 266);
+            this.btnMenuEscanear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuEscanear.Location = new System.Drawing.Point(100, 248);
+            this.btnMenuEscanear.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuEscanear.Name = "btnMenuEscanear";
-            this.btnMenuEscanear.Size = new System.Drawing.Size(220, 55);
+            this.btnMenuEscanear.Size = new System.Drawing.Size(200, 50);
             this.btnMenuEscanear.TabIndex = 4;
             this.btnMenuEscanear.Text = "Escanear un vehiculo";
             this.btnMenuEscanear.UseVisualStyleBackColor = true;
@@ -193,9 +222,11 @@
             // 
             // btnMenuMostrarCarga
             // 
-            this.btnMenuMostrarCarga.Location = new System.Drawing.Point(682, 266);
+            this.btnMenuMostrarCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuMostrarCarga.Location = new System.Drawing.Point(630, 248);
+            this.btnMenuMostrarCarga.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuMostrarCarga.Name = "btnMenuMostrarCarga";
-            this.btnMenuMostrarCarga.Size = new System.Drawing.Size(220, 55);
+            this.btnMenuMostrarCarga.Size = new System.Drawing.Size(200, 50);
             this.btnMenuMostrarCarga.TabIndex = 8;
             this.btnMenuMostrarCarga.Text = "Ver carga de los vehiculos";
             this.btnMenuMostrarCarga.UseVisualStyleBackColor = true;
@@ -210,11 +241,12 @@
             this.listaTabsMenu.Controls.Add(this.tabEscanearVehiculos);
             this.listaTabsMenu.Controls.Add(this.tabCargaVehiculos);
             this.listaTabsMenu.ItemSize = new System.Drawing.Size(0, 1);
-            this.listaTabsMenu.Location = new System.Drawing.Point(112, 193);
+            this.listaTabsMenu.Location = new System.Drawing.Point(180, 185);
+            this.listaTabsMenu.Margin = new System.Windows.Forms.Padding(2);
             this.listaTabsMenu.Multiline = true;
             this.listaTabsMenu.Name = "listaTabsMenu";
             this.listaTabsMenu.SelectedIndex = 0;
-            this.listaTabsMenu.Size = new System.Drawing.Size(1050, 500);
+            this.listaTabsMenu.Size = new System.Drawing.Size(916, 477);
             this.listaTabsMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.listaTabsMenu.TabIndex = 10;
             this.listaTabsMenu.TabStop = false;
@@ -228,9 +260,10 @@
             this.tabMenuPrincipal.Controls.Add(this.btnMenuEscanear);
             this.tabMenuPrincipal.Controls.Add(this.btnMenuMostrarCarga);
             this.tabMenuPrincipal.Location = new System.Drawing.Point(4, 5);
+            this.tabMenuPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.tabMenuPrincipal.Name = "tabMenuPrincipal";
-            this.tabMenuPrincipal.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMenuPrincipal.Size = new System.Drawing.Size(1042, 491);
+            this.tabMenuPrincipal.Padding = new System.Windows.Forms.Padding(2);
+            this.tabMenuPrincipal.Size = new System.Drawing.Size(908, 468);
             this.tabMenuPrincipal.TabIndex = 0;
             this.tabMenuPrincipal.Text = "tabPage1";
             // 
@@ -243,9 +276,10 @@
             this.tabAltaVehiculos.Controls.Add(this.radiobtnAltaOpcionTesla);
             this.tabAltaVehiculos.Controls.Add(this.btnAltaVolverMenu);
             this.tabAltaVehiculos.Location = new System.Drawing.Point(4, 5);
+            this.tabAltaVehiculos.Margin = new System.Windows.Forms.Padding(2);
             this.tabAltaVehiculos.Name = "tabAltaVehiculos";
-            this.tabAltaVehiculos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAltaVehiculos.Size = new System.Drawing.Size(1042, 491);
+            this.tabAltaVehiculos.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAltaVehiculos.Size = new System.Drawing.Size(908, 468);
             this.tabAltaVehiculos.TabIndex = 1;
             this.tabAltaVehiculos.Text = "tabPage2";
             // 
@@ -255,11 +289,12 @@
             this.listaTabsAlta.Controls.Add(this.tabAltaTesla);
             this.listaTabsAlta.Controls.Add(this.tabAltaSpaceX);
             this.listaTabsAlta.ItemSize = new System.Drawing.Size(0, 1);
-            this.listaTabsAlta.Location = new System.Drawing.Point(281, 110);
+            this.listaTabsAlta.Location = new System.Drawing.Point(289, 106);
+            this.listaTabsAlta.Margin = new System.Windows.Forms.Padding(2);
             this.listaTabsAlta.Multiline = true;
             this.listaTabsAlta.Name = "listaTabsAlta";
             this.listaTabsAlta.SelectedIndex = 0;
-            this.listaTabsAlta.Size = new System.Drawing.Size(516, 348);
+            this.listaTabsAlta.Size = new System.Drawing.Size(387, 283);
             this.listaTabsAlta.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.listaTabsAlta.TabIndex = 11;
             this.listaTabsAlta.TabStop = false;
@@ -281,17 +316,19 @@
             this.tabAltaTesla.Controls.Add(this.labelKilometrajeTesla);
             this.tabAltaTesla.Controls.Add(this.labelAnioTesla);
             this.tabAltaTesla.Location = new System.Drawing.Point(4, 5);
+            this.tabAltaTesla.Margin = new System.Windows.Forms.Padding(2);
             this.tabAltaTesla.Name = "tabAltaTesla";
-            this.tabAltaTesla.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAltaTesla.Size = new System.Drawing.Size(508, 339);
+            this.tabAltaTesla.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAltaTesla.Size = new System.Drawing.Size(379, 274);
             this.tabAltaTesla.TabIndex = 0;
             this.tabAltaTesla.Text = "tabPage1";
             // 
             // btnAltaTeslaLimpiar
             // 
-            this.btnAltaTeslaLimpiar.Location = new System.Drawing.Point(205, 304);
+            this.btnAltaTeslaLimpiar.Location = new System.Drawing.Point(154, 247);
+            this.btnAltaTeslaLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAltaTeslaLimpiar.Name = "btnAltaTeslaLimpiar";
-            this.btnAltaTeslaLimpiar.Size = new System.Drawing.Size(140, 30);
+            this.btnAltaTeslaLimpiar.Size = new System.Drawing.Size(105, 24);
             this.btnAltaTeslaLimpiar.TabIndex = 23;
             this.btnAltaTeslaLimpiar.Text = "Limpiar";
             this.btnAltaTeslaLimpiar.UseVisualStyleBackColor = true;
@@ -299,9 +336,10 @@
             // 
             // btnAltaTeslaGuardar
             // 
-            this.btnAltaTeslaGuardar.Location = new System.Drawing.Point(49, 304);
+            this.btnAltaTeslaGuardar.Location = new System.Drawing.Point(37, 247);
+            this.btnAltaTeslaGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAltaTeslaGuardar.Name = "btnAltaTeslaGuardar";
-            this.btnAltaTeslaGuardar.Size = new System.Drawing.Size(140, 30);
+            this.btnAltaTeslaGuardar.Size = new System.Drawing.Size(105, 24);
             this.btnAltaTeslaGuardar.TabIndex = 22;
             this.btnAltaTeslaGuardar.Text = "Guardar";
             this.btnAltaTeslaGuardar.UseVisualStyleBackColor = true;
@@ -309,30 +347,34 @@
             // 
             // textBoxDuenioTesla
             // 
-            this.textBoxDuenioTesla.Location = new System.Drawing.Point(270, 250);
+            this.textBoxDuenioTesla.Location = new System.Drawing.Point(202, 203);
+            this.textBoxDuenioTesla.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDuenioTesla.Name = "textBoxDuenioTesla";
-            this.textBoxDuenioTesla.Size = new System.Drawing.Size(190, 22);
+            this.textBoxDuenioTesla.Size = new System.Drawing.Size(144, 20);
             this.textBoxDuenioTesla.TabIndex = 21;
             // 
             // textBoxColorTesla
             // 
-            this.textBoxColorTesla.Location = new System.Drawing.Point(270, 205);
+            this.textBoxColorTesla.Location = new System.Drawing.Point(202, 167);
+            this.textBoxColorTesla.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxColorTesla.Name = "textBoxColorTesla";
-            this.textBoxColorTesla.Size = new System.Drawing.Size(190, 22);
+            this.textBoxColorTesla.Size = new System.Drawing.Size(144, 20);
             this.textBoxColorTesla.TabIndex = 20;
             // 
             // textBoxKmActualTesla
             // 
-            this.textBoxKmActualTesla.Location = new System.Drawing.Point(270, 160);
+            this.textBoxKmActualTesla.Location = new System.Drawing.Point(202, 130);
+            this.textBoxKmActualTesla.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxKmActualTesla.Name = "textBoxKmActualTesla";
-            this.textBoxKmActualTesla.Size = new System.Drawing.Size(190, 22);
+            this.textBoxKmActualTesla.Size = new System.Drawing.Size(144, 20);
             this.textBoxKmActualTesla.TabIndex = 19;
             // 
             // textBoxAnioTesla
             // 
-            this.textBoxAnioTesla.Location = new System.Drawing.Point(270, 115);
+            this.textBoxAnioTesla.Location = new System.Drawing.Point(202, 93);
+            this.textBoxAnioTesla.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAnioTesla.Name = "textBoxAnioTesla";
-            this.textBoxAnioTesla.Size = new System.Drawing.Size(190, 22);
+            this.textBoxAnioTesla.Size = new System.Drawing.Size(144, 20);
             this.textBoxAnioTesla.TabIndex = 18;
             // 
             // dropDownModeloTesla
@@ -343,9 +385,10 @@
             "Modelo X",
             "Modelo S",
             "Cybertruck"});
-            this.dropDownModeloTesla.Location = new System.Drawing.Point(270, 65);
+            this.dropDownModeloTesla.Location = new System.Drawing.Point(202, 53);
+            this.dropDownModeloTesla.Margin = new System.Windows.Forms.Padding(2);
             this.dropDownModeloTesla.Name = "dropDownModeloTesla";
-            this.dropDownModeloTesla.Size = new System.Drawing.Size(190, 24);
+            this.dropDownModeloTesla.Size = new System.Drawing.Size(144, 21);
             this.dropDownModeloTesla.TabIndex = 17;
             // 
             // labelModeloTesla
@@ -353,9 +396,10 @@
             this.labelModeloTesla.AutoSize = true;
             this.labelModeloTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelModeloTesla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelModeloTesla.Location = new System.Drawing.Point(45, 70);
+            this.labelModeloTesla.Location = new System.Drawing.Point(34, 57);
+            this.labelModeloTesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelModeloTesla.Name = "labelModeloTesla";
-            this.labelModeloTesla.Size = new System.Drawing.Size(68, 20);
+            this.labelModeloTesla.Size = new System.Drawing.Size(58, 17);
             this.labelModeloTesla.TabIndex = 16;
             this.labelModeloTesla.Text = "Modelo:";
             // 
@@ -364,9 +408,10 @@
             this.labelDueñoTesla.AutoSize = true;
             this.labelDueñoTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDueñoTesla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelDueñoTesla.Location = new System.Drawing.Point(45, 250);
+            this.labelDueñoTesla.Location = new System.Drawing.Point(34, 203);
+            this.labelDueñoTesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDueñoTesla.Name = "labelDueñoTesla";
-            this.labelDueñoTesla.Size = new System.Drawing.Size(63, 20);
+            this.labelDueñoTesla.Size = new System.Drawing.Size(54, 17);
             this.labelDueñoTesla.TabIndex = 15;
             this.labelDueñoTesla.Text = "Dueño:";
             // 
@@ -375,9 +420,10 @@
             this.labelColorTesla.AutoSize = true;
             this.labelColorTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelColorTesla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelColorTesla.Location = new System.Drawing.Point(45, 205);
+            this.labelColorTesla.Location = new System.Drawing.Point(34, 167);
+            this.labelColorTesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelColorTesla.Name = "labelColorTesla";
-            this.labelColorTesla.Size = new System.Drawing.Size(54, 20);
+            this.labelColorTesla.Size = new System.Drawing.Size(45, 17);
             this.labelColorTesla.TabIndex = 14;
             this.labelColorTesla.Text = "Color:";
             // 
@@ -386,9 +432,10 @@
             this.labelKilometrajeTesla.AutoSize = true;
             this.labelKilometrajeTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKilometrajeTesla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelKilometrajeTesla.Location = new System.Drawing.Point(45, 160);
+            this.labelKilometrajeTesla.Location = new System.Drawing.Point(34, 130);
+            this.labelKilometrajeTesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelKilometrajeTesla.Name = "labelKilometrajeTesla";
-            this.labelKilometrajeTesla.Size = new System.Drawing.Size(148, 20);
+            this.labelKilometrajeTesla.Size = new System.Drawing.Size(124, 17);
             this.labelKilometrajeTesla.TabIndex = 13;
             this.labelKilometrajeTesla.Text = "Kilometraje actual:";
             // 
@@ -397,12 +444,12 @@
             this.labelAnioTesla.AutoSize = true;
             this.labelAnioTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAnioTesla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelAnioTesla.Location = new System.Drawing.Point(45, 115);
+            this.labelAnioTesla.Location = new System.Drawing.Point(34, 93);
+            this.labelAnioTesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAnioTesla.Name = "labelAnioTesla";
-            this.labelAnioTesla.Size = new System.Drawing.Size(43, 20);
+            this.labelAnioTesla.Size = new System.Drawing.Size(37, 17);
             this.labelAnioTesla.TabIndex = 12;
             this.labelAnioTesla.Text = "Año:";
-            this.labelAnioTesla.Click += new System.EventHandler(this.label3_Click);
             // 
             // tabAltaSpaceX
             // 
@@ -419,20 +466,20 @@
             this.tabAltaSpaceX.Controls.Add(this.labelColorSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.labelHorasSpaceX);
             this.tabAltaSpaceX.Controls.Add(this.labelAnioSpaceX);
-            this.tabAltaSpaceX.Controls.Add(this.label2);
-            this.tabAltaSpaceX.Controls.Add(this.button8);
             this.tabAltaSpaceX.Location = new System.Drawing.Point(4, 5);
+            this.tabAltaSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.tabAltaSpaceX.Name = "tabAltaSpaceX";
-            this.tabAltaSpaceX.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAltaSpaceX.Size = new System.Drawing.Size(508, 339);
+            this.tabAltaSpaceX.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAltaSpaceX.Size = new System.Drawing.Size(379, 274);
             this.tabAltaSpaceX.TabIndex = 1;
             this.tabAltaSpaceX.Text = "tabPage2";
             // 
             // btnAltaSpaceXLimpiar
             // 
-            this.btnAltaSpaceXLimpiar.Location = new System.Drawing.Point(205, 304);
+            this.btnAltaSpaceXLimpiar.Location = new System.Drawing.Point(159, 246);
+            this.btnAltaSpaceXLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAltaSpaceXLimpiar.Name = "btnAltaSpaceXLimpiar";
-            this.btnAltaSpaceXLimpiar.Size = new System.Drawing.Size(140, 30);
+            this.btnAltaSpaceXLimpiar.Size = new System.Drawing.Size(105, 24);
             this.btnAltaSpaceXLimpiar.TabIndex = 33;
             this.btnAltaSpaceXLimpiar.Text = "Limpiar";
             this.btnAltaSpaceXLimpiar.UseVisualStyleBackColor = true;
@@ -440,9 +487,10 @@
             // 
             // btnAltaSpaceXGuardar
             // 
-            this.btnAltaSpaceXGuardar.Location = new System.Drawing.Point(49, 304);
+            this.btnAltaSpaceXGuardar.Location = new System.Drawing.Point(38, 246);
+            this.btnAltaSpaceXGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAltaSpaceXGuardar.Name = "btnAltaSpaceXGuardar";
-            this.btnAltaSpaceXGuardar.Size = new System.Drawing.Size(140, 30);
+            this.btnAltaSpaceXGuardar.Size = new System.Drawing.Size(105, 24);
             this.btnAltaSpaceXGuardar.TabIndex = 32;
             this.btnAltaSpaceXGuardar.Text = "Guardar";
             this.btnAltaSpaceXGuardar.UseVisualStyleBackColor = true;
@@ -450,30 +498,34 @@
             // 
             // textBoxEmpresaSpaceX
             // 
-            this.textBoxEmpresaSpaceX.Location = new System.Drawing.Point(270, 250);
+            this.textBoxEmpresaSpaceX.Location = new System.Drawing.Point(203, 182);
+            this.textBoxEmpresaSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmpresaSpaceX.Name = "textBoxEmpresaSpaceX";
-            this.textBoxEmpresaSpaceX.Size = new System.Drawing.Size(190, 22);
+            this.textBoxEmpresaSpaceX.Size = new System.Drawing.Size(144, 20);
             this.textBoxEmpresaSpaceX.TabIndex = 31;
             // 
             // textBoxColorSpaceX
             // 
-            this.textBoxColorSpaceX.Location = new System.Drawing.Point(270, 205);
+            this.textBoxColorSpaceX.Location = new System.Drawing.Point(203, 147);
+            this.textBoxColorSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxColorSpaceX.Name = "textBoxColorSpaceX";
-            this.textBoxColorSpaceX.Size = new System.Drawing.Size(190, 22);
+            this.textBoxColorSpaceX.Size = new System.Drawing.Size(144, 20);
             this.textBoxColorSpaceX.TabIndex = 30;
             // 
             // textBoxHsVueloActualSpaceX
             // 
-            this.textBoxHsVueloActualSpaceX.Location = new System.Drawing.Point(270, 160);
+            this.textBoxHsVueloActualSpaceX.Location = new System.Drawing.Point(203, 112);
+            this.textBoxHsVueloActualSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxHsVueloActualSpaceX.Name = "textBoxHsVueloActualSpaceX";
-            this.textBoxHsVueloActualSpaceX.Size = new System.Drawing.Size(190, 22);
+            this.textBoxHsVueloActualSpaceX.Size = new System.Drawing.Size(144, 20);
             this.textBoxHsVueloActualSpaceX.TabIndex = 29;
             // 
             // textBoxAnioSpaceX
             // 
-            this.textBoxAnioSpaceX.Location = new System.Drawing.Point(270, 115);
+            this.textBoxAnioSpaceX.Location = new System.Drawing.Point(203, 77);
+            this.textBoxAnioSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAnioSpaceX.Name = "textBoxAnioSpaceX";
-            this.textBoxAnioSpaceX.Size = new System.Drawing.Size(190, 22);
+            this.textBoxAnioSpaceX.Size = new System.Drawing.Size(144, 20);
             this.textBoxAnioSpaceX.TabIndex = 28;
             // 
             // dropDownModeloSpaceX
@@ -483,9 +535,10 @@
             this.dropDownModeloSpaceX.Items.AddRange(new object[] {
             "Starship",
             "Falcon 9"});
-            this.dropDownModeloSpaceX.Location = new System.Drawing.Point(270, 65);
+            this.dropDownModeloSpaceX.Location = new System.Drawing.Point(203, 41);
+            this.dropDownModeloSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.dropDownModeloSpaceX.Name = "dropDownModeloSpaceX";
-            this.dropDownModeloSpaceX.Size = new System.Drawing.Size(190, 24);
+            this.dropDownModeloSpaceX.Size = new System.Drawing.Size(144, 21);
             this.dropDownModeloSpaceX.TabIndex = 27;
             // 
             // labelModeloSpaceX
@@ -493,9 +546,10 @@
             this.labelModeloSpaceX.AutoSize = true;
             this.labelModeloSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelModeloSpaceX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelModeloSpaceX.Location = new System.Drawing.Point(45, 70);
+            this.labelModeloSpaceX.Location = new System.Drawing.Point(35, 45);
+            this.labelModeloSpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelModeloSpaceX.Name = "labelModeloSpaceX";
-            this.labelModeloSpaceX.Size = new System.Drawing.Size(68, 20);
+            this.labelModeloSpaceX.Size = new System.Drawing.Size(58, 17);
             this.labelModeloSpaceX.TabIndex = 26;
             this.labelModeloSpaceX.Text = "Modelo:";
             // 
@@ -504,9 +558,10 @@
             this.labelEmpresaSpaceX.AutoSize = true;
             this.labelEmpresaSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmpresaSpaceX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelEmpresaSpaceX.Location = new System.Drawing.Point(45, 250);
+            this.labelEmpresaSpaceX.Location = new System.Drawing.Point(35, 185);
+            this.labelEmpresaSpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmpresaSpaceX.Name = "labelEmpresaSpaceX";
-            this.labelEmpresaSpaceX.Size = new System.Drawing.Size(131, 20);
+            this.labelEmpresaSpaceX.Size = new System.Drawing.Size(112, 17);
             this.labelEmpresaSpaceX.TabIndex = 25;
             this.labelEmpresaSpaceX.Text = "Empresa dueña:";
             // 
@@ -515,9 +570,10 @@
             this.labelColorSpaceX.AutoSize = true;
             this.labelColorSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelColorSpaceX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelColorSpaceX.Location = new System.Drawing.Point(45, 205);
+            this.labelColorSpaceX.Location = new System.Drawing.Point(35, 150);
+            this.labelColorSpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelColorSpaceX.Name = "labelColorSpaceX";
-            this.labelColorSpaceX.Size = new System.Drawing.Size(54, 20);
+            this.labelColorSpaceX.Size = new System.Drawing.Size(45, 17);
             this.labelColorSpaceX.TabIndex = 24;
             this.labelColorSpaceX.Text = "Color:";
             // 
@@ -526,9 +582,10 @@
             this.labelHorasSpaceX.AutoSize = true;
             this.labelHorasSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHorasSpaceX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelHorasSpaceX.Location = new System.Drawing.Point(45, 160);
+            this.labelHorasSpaceX.Location = new System.Drawing.Point(35, 115);
+            this.labelHorasSpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHorasSpaceX.Name = "labelHorasSpaceX";
-            this.labelHorasSpaceX.Size = new System.Drawing.Size(195, 20);
+            this.labelHorasSpaceX.Size = new System.Drawing.Size(165, 17);
             this.labelHorasSpaceX.TabIndex = 23;
             this.labelHorasSpaceX.Text = "Horas de vuelo actuales:";
             // 
@@ -537,40 +594,22 @@
             this.labelAnioSpaceX.AutoSize = true;
             this.labelAnioSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAnioSpaceX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelAnioSpaceX.Location = new System.Drawing.Point(45, 115);
+            this.labelAnioSpaceX.Location = new System.Drawing.Point(35, 80);
+            this.labelAnioSpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAnioSpaceX.Name = "labelAnioSpaceX";
-            this.labelAnioSpaceX.Size = new System.Drawing.Size(43, 20);
+            this.labelAnioSpaceX.Size = new System.Drawing.Size(37, 17);
             this.labelAnioSpaceX.TabIndex = 22;
             this.labelAnioSpaceX.Text = "Año:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(277, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Tipo de vehiculo:";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(31, 403);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(220, 55);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Volver al menu principal";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // labelAltaTipoVehiculo
             // 
             this.labelAltaTipoVehiculo.AutoSize = true;
             this.labelAltaTipoVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAltaTipoVehiculo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelAltaTipoVehiculo.Location = new System.Drawing.Point(277, 65);
+            this.labelAltaTipoVehiculo.Location = new System.Drawing.Point(286, 34);
+            this.labelAltaTipoVehiculo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAltaTipoVehiculo.Name = "labelAltaTipoVehiculo";
-            this.labelAltaTipoVehiculo.Size = new System.Drawing.Size(135, 20);
+            this.labelAltaTipoVehiculo.Size = new System.Drawing.Size(116, 17);
             this.labelAltaTipoVehiculo.TabIndex = 4;
             this.labelAltaTipoVehiculo.Text = "Tipo de vehiculo:";
             // 
@@ -578,9 +617,10 @@
             // 
             this.radiobtnAltaOpcionSpaceX.AutoSize = true;
             this.radiobtnAltaOpcionSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnAltaOpcionSpaceX.Location = new System.Drawing.Point(600, 65);
+            this.radiobtnAltaOpcionSpaceX.Location = new System.Drawing.Point(525, 34);
+            this.radiobtnAltaOpcionSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnAltaOpcionSpaceX.Name = "radiobtnAltaOpcionSpaceX";
-            this.radiobtnAltaOpcionSpaceX.Size = new System.Drawing.Size(88, 24);
+            this.radiobtnAltaOpcionSpaceX.Size = new System.Drawing.Size(75, 21);
             this.radiobtnAltaOpcionSpaceX.TabIndex = 3;
             this.radiobtnAltaOpcionSpaceX.TabStop = true;
             this.radiobtnAltaOpcionSpaceX.Text = "SpaceX";
@@ -591,9 +631,10 @@
             // 
             this.radiobtnAltaOpcionTesla.AutoSize = true;
             this.radiobtnAltaOpcionTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnAltaOpcionTesla.Location = new System.Drawing.Point(490, 65);
+            this.radiobtnAltaOpcionTesla.Location = new System.Drawing.Point(444, 34);
+            this.radiobtnAltaOpcionTesla.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnAltaOpcionTesla.Name = "radiobtnAltaOpcionTesla";
-            this.radiobtnAltaOpcionTesla.Size = new System.Drawing.Size(71, 24);
+            this.radiobtnAltaOpcionTesla.Size = new System.Drawing.Size(61, 21);
             this.radiobtnAltaOpcionTesla.TabIndex = 2;
             this.radiobtnAltaOpcionTesla.TabStop = true;
             this.radiobtnAltaOpcionTesla.Text = "Tesla";
@@ -602,9 +643,10 @@
             // 
             // btnAltaVolverMenu
             // 
-            this.btnAltaVolverMenu.Location = new System.Drawing.Point(12, 430);
+            this.btnAltaVolverMenu.Location = new System.Drawing.Point(8, 412);
+            this.btnAltaVolverMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnAltaVolverMenu.Name = "btnAltaVolverMenu";
-            this.btnAltaVolverMenu.Size = new System.Drawing.Size(220, 55);
+            this.btnAltaVolverMenu.Size = new System.Drawing.Size(165, 45);
             this.btnAltaVolverMenu.TabIndex = 1;
             this.btnAltaVolverMenu.Text = "Volver al menu principal";
             this.btnAltaVolverMenu.UseVisualStyleBackColor = true;
@@ -621,16 +663,18 @@
             this.tabEliminarVehiculos.Controls.Add(this.radiobtnEliminarOpcionSpaceX);
             this.tabEliminarVehiculos.Controls.Add(this.radiobtnEliminarOpcionTesla);
             this.tabEliminarVehiculos.Location = new System.Drawing.Point(4, 5);
+            this.tabEliminarVehiculos.Margin = new System.Windows.Forms.Padding(2);
             this.tabEliminarVehiculos.Name = "tabEliminarVehiculos";
-            this.tabEliminarVehiculos.Size = new System.Drawing.Size(1042, 491);
+            this.tabEliminarVehiculos.Size = new System.Drawing.Size(908, 468);
             this.tabEliminarVehiculos.TabIndex = 2;
             this.tabEliminarVehiculos.Text = "tabPage3";
             // 
             // btnEliminarVehiculo
             // 
-            this.btnEliminarVehiculo.Location = new System.Drawing.Point(281, 160);
+            this.btnEliminarVehiculo.Location = new System.Drawing.Point(289, 107);
+            this.btnEliminarVehiculo.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarVehiculo.Name = "btnEliminarVehiculo";
-            this.btnEliminarVehiculo.Size = new System.Drawing.Size(140, 30);
+            this.btnEliminarVehiculo.Size = new System.Drawing.Size(105, 24);
             this.btnEliminarVehiculo.TabIndex = 35;
             this.btnEliminarVehiculo.Text = "Eliminar vehiculo";
             this.btnEliminarVehiculo.UseVisualStyleBackColor = true;
@@ -638,9 +682,10 @@
             // 
             // textBoxEliminarDueño
             // 
-            this.textBoxEliminarDueño.Location = new System.Drawing.Point(490, 108);
+            this.textBoxEliminarDueño.Location = new System.Drawing.Point(444, 63);
+            this.textBoxEliminarDueño.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEliminarDueño.Name = "textBoxEliminarDueño";
-            this.textBoxEliminarDueño.Size = new System.Drawing.Size(190, 22);
+            this.textBoxEliminarDueño.Size = new System.Drawing.Size(144, 20);
             this.textBoxEliminarDueño.TabIndex = 34;
             // 
             // labelEliminarDueño
@@ -648,17 +693,19 @@
             this.labelEliminarDueño.AutoSize = true;
             this.labelEliminarDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEliminarDueño.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelEliminarDueño.Location = new System.Drawing.Point(277, 110);
+            this.labelEliminarDueño.Location = new System.Drawing.Point(286, 66);
+            this.labelEliminarDueño.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEliminarDueño.Name = "labelEliminarDueño";
-            this.labelEliminarDueño.Size = new System.Drawing.Size(63, 20);
+            this.labelEliminarDueño.Size = new System.Drawing.Size(57, 17);
             this.labelEliminarDueño.TabIndex = 33;
-            this.labelEliminarDueño.Text = "Dueño:";
+            this.labelEliminarDueño.Text = "Duenio:";
             // 
             // btnEliminarVolverMenu
             // 
-            this.btnEliminarVolverMenu.Location = new System.Drawing.Point(12, 430);
+            this.btnEliminarVolverMenu.Location = new System.Drawing.Point(8, 412);
+            this.btnEliminarVolverMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarVolverMenu.Name = "btnEliminarVolverMenu";
-            this.btnEliminarVolverMenu.Size = new System.Drawing.Size(220, 55);
+            this.btnEliminarVolverMenu.Size = new System.Drawing.Size(165, 45);
             this.btnEliminarVolverMenu.TabIndex = 8;
             this.btnEliminarVolverMenu.Text = "Volver al menu principal";
             this.btnEliminarVolverMenu.UseVisualStyleBackColor = true;
@@ -669,9 +716,10 @@
             this.labelEliminarTipo.AutoSize = true;
             this.labelEliminarTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEliminarTipo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelEliminarTipo.Location = new System.Drawing.Point(277, 65);
+            this.labelEliminarTipo.Location = new System.Drawing.Point(286, 34);
+            this.labelEliminarTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEliminarTipo.Name = "labelEliminarTipo";
-            this.labelEliminarTipo.Size = new System.Drawing.Size(135, 20);
+            this.labelEliminarTipo.Size = new System.Drawing.Size(116, 17);
             this.labelEliminarTipo.TabIndex = 7;
             this.labelEliminarTipo.Text = "Tipo de vehiculo:";
             // 
@@ -679,22 +727,23 @@
             // 
             this.radiobtnEliminarOpcionSpaceX.AutoSize = true;
             this.radiobtnEliminarOpcionSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnEliminarOpcionSpaceX.Location = new System.Drawing.Point(600, 65);
+            this.radiobtnEliminarOpcionSpaceX.Location = new System.Drawing.Point(525, 34);
+            this.radiobtnEliminarOpcionSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnEliminarOpcionSpaceX.Name = "radiobtnEliminarOpcionSpaceX";
-            this.radiobtnEliminarOpcionSpaceX.Size = new System.Drawing.Size(88, 24);
+            this.radiobtnEliminarOpcionSpaceX.Size = new System.Drawing.Size(75, 21);
             this.radiobtnEliminarOpcionSpaceX.TabIndex = 6;
             this.radiobtnEliminarOpcionSpaceX.Text = "SpaceX";
             this.radiobtnEliminarOpcionSpaceX.UseVisualStyleBackColor = true;
-            this.radiobtnEliminarOpcionSpaceX.CheckedChanged += new System.EventHandler(this.radiobtnEliminarOpcionSpaceX_CheckedChanged);
             // 
             // radiobtnEliminarOpcionTesla
             // 
             this.radiobtnEliminarOpcionTesla.AutoSize = true;
             this.radiobtnEliminarOpcionTesla.Checked = true;
             this.radiobtnEliminarOpcionTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnEliminarOpcionTesla.Location = new System.Drawing.Point(490, 65);
+            this.radiobtnEliminarOpcionTesla.Location = new System.Drawing.Point(444, 34);
+            this.radiobtnEliminarOpcionTesla.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnEliminarOpcionTesla.Name = "radiobtnEliminarOpcionTesla";
-            this.radiobtnEliminarOpcionTesla.Size = new System.Drawing.Size(71, 24);
+            this.radiobtnEliminarOpcionTesla.Size = new System.Drawing.Size(61, 21);
             this.radiobtnEliminarOpcionTesla.TabIndex = 5;
             this.radiobtnEliminarOpcionTesla.TabStop = true;
             this.radiobtnEliminarOpcionTesla.Text = "Tesla";
@@ -703,46 +752,176 @@
             // tabEscanearVehiculos
             // 
             this.tabEscanearVehiculos.BackColor = System.Drawing.Color.SteelBlue;
-            this.tabEscanearVehiculos.Controls.Add(this.btnEscanearBuscarDueño);
-            this.tabEscanearVehiculos.Controls.Add(this.textBoxEscanear);
-            this.tabEscanearVehiculos.Controls.Add(this.labelEscanearNombreDueño);
+            this.tabEscanearVehiculos.Controls.Add(this.panelEscanearServicesSpaceX);
+            this.tabEscanearVehiculos.Controls.Add(this.panelEscanearServicesTesla);
+            this.tabEscanearVehiculos.Controls.Add(this.btnEscanearBuscarDuenio);
+            this.tabEscanearVehiculos.Controls.Add(this.textBoxEscanearDuenio);
+            this.tabEscanearVehiculos.Controls.Add(this.labelEscanearNombreDuenio);
             this.tabEscanearVehiculos.Controls.Add(this.listaTabsEscanear);
             this.tabEscanearVehiculos.Controls.Add(this.labelEscanearTipoVehiculo);
             this.tabEscanearVehiculos.Controls.Add(this.radiobtnEscanearOpcionSpaceX);
             this.tabEscanearVehiculos.Controls.Add(this.radiobtnEscanearOpcionTesla);
             this.tabEscanearVehiculos.Controls.Add(this.btnEscanearVolverMenu);
             this.tabEscanearVehiculos.Location = new System.Drawing.Point(4, 5);
+            this.tabEscanearVehiculos.Margin = new System.Windows.Forms.Padding(2);
             this.tabEscanearVehiculos.Name = "tabEscanearVehiculos";
-            this.tabEscanearVehiculos.Size = new System.Drawing.Size(1042, 491);
+            this.tabEscanearVehiculos.Size = new System.Drawing.Size(908, 468);
             this.tabEscanearVehiculos.TabIndex = 3;
             this.tabEscanearVehiculos.Text = "tabEscanearVehiculos";
             // 
-            // btnEscanearBuscarDueño
+            // panelEscanearServicesSpaceX
             // 
-            this.btnEscanearBuscarDueño.Location = new System.Drawing.Point(678, 69);
-            this.btnEscanearBuscarDueño.Name = "btnEscanearBuscarDueño";
-            this.btnEscanearBuscarDueño.Size = new System.Drawing.Size(75, 23);
-            this.btnEscanearBuscarDueño.TabIndex = 39;
-            this.btnEscanearBuscarDueño.Text = "Buscar";
-            this.btnEscanearBuscarDueño.UseVisualStyleBackColor = true;
+            this.panelEscanearServicesSpaceX.BackColor = System.Drawing.SystemColors.Control;
+            this.panelEscanearServicesSpaceX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelEscanearServicesSpaceX.Controls.Add(this.labelControl2SpaceX);
+            this.panelEscanearServicesSpaceX.Controls.Add(this.labelControl1SpaceX);
+            this.panelEscanearServicesSpaceX.Controls.Add(this.labelControlesSpaceX);
+            this.panelEscanearServicesSpaceX.Location = new System.Drawing.Point(8, 186);
+            this.panelEscanearServicesSpaceX.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEscanearServicesSpaceX.Name = "panelEscanearServicesSpaceX";
+            this.panelEscanearServicesSpaceX.Size = new System.Drawing.Size(253, 157);
+            this.panelEscanearServicesSpaceX.TabIndex = 41;
+            this.panelEscanearServicesSpaceX.Visible = false;
             // 
-            // textBoxEscanear
+            // labelControl2SpaceX
             // 
-            this.textBoxEscanear.Location = new System.Drawing.Point(473, 70);
-            this.textBoxEscanear.Name = "textBoxEscanear";
-            this.textBoxEscanear.Size = new System.Drawing.Size(190, 22);
-            this.textBoxEscanear.TabIndex = 38;
+            this.labelControl2SpaceX.AutoSize = true;
+            this.labelControl2SpaceX.Location = new System.Drawing.Point(2, 66);
+            this.labelControl2SpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControl2SpaceX.Name = "labelControl2SpaceX";
+            this.labelControl2SpaceX.Size = new System.Drawing.Size(233, 13);
+            this.labelControl2SpaceX.TabIndex = 3;
+            this.labelControl2SpaceX.Text = "(2) Control Sistema de Propulsion (cada 1000hs)";
             // 
-            // labelEscanearNombreDueño
+            // labelControl1SpaceX
             // 
-            this.labelEscanearNombreDueño.AutoSize = true;
-            this.labelEscanearNombreDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEscanearNombreDueño.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelEscanearNombreDueño.Location = new System.Drawing.Point(265, 72);
-            this.labelEscanearNombreDueño.Name = "labelEscanearNombreDueño";
-            this.labelEscanearNombreDueño.Size = new System.Drawing.Size(63, 20);
-            this.labelEscanearNombreDueño.TabIndex = 37;
-            this.labelEscanearNombreDueño.Text = "Dueño:";
+            this.labelControl1SpaceX.AutoSize = true;
+            this.labelControl1SpaceX.Location = new System.Drawing.Point(2, 44);
+            this.labelControl1SpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControl1SpaceX.Name = "labelControl1SpaceX";
+            this.labelControl1SpaceX.Size = new System.Drawing.Size(236, 13);
+            this.labelControl1SpaceX.TabIndex = 2;
+            this.labelControl1SpaceX.Text = "(1) Control Sistema de Navegacion (cada 500hs)";
+            // 
+            // labelControlesSpaceX
+            // 
+            this.labelControlesSpaceX.AutoSize = true;
+            this.labelControlesSpaceX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelControlesSpaceX.Location = new System.Drawing.Point(79, 18);
+            this.labelControlesSpaceX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControlesSpaceX.Name = "labelControlesSpaceX";
+            this.labelControlesSpaceX.Size = new System.Drawing.Size(94, 15);
+            this.labelControlesSpaceX.TabIndex = 1;
+            this.labelControlesSpaceX.Text = "Controles SpaceX";
+            // 
+            // panelEscanearServicesTesla
+            // 
+            this.panelEscanearServicesTesla.BackColor = System.Drawing.SystemColors.Control;
+            this.panelEscanearServicesTesla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelEscanearServicesTesla.Controls.Add(this.labelControl5Tesla);
+            this.panelEscanearServicesTesla.Controls.Add(this.labelControl4Tesla);
+            this.panelEscanearServicesTesla.Controls.Add(this.labelControl3Tesla);
+            this.panelEscanearServicesTesla.Controls.Add(this.labelControl2Tesla);
+            this.panelEscanearServicesTesla.Controls.Add(this.labelControl1Tesla);
+            this.panelEscanearServicesTesla.Controls.Add(this.labelControlesTesla);
+            this.panelEscanearServicesTesla.Location = new System.Drawing.Point(8, 24);
+            this.panelEscanearServicesTesla.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEscanearServicesTesla.Name = "panelEscanearServicesTesla";
+            this.panelEscanearServicesTesla.Size = new System.Drawing.Size(253, 157);
+            this.panelEscanearServicesTesla.TabIndex = 40;
+            this.panelEscanearServicesTesla.Visible = false;
+            // 
+            // labelControl5Tesla
+            // 
+            this.labelControl5Tesla.AutoSize = true;
+            this.labelControl5Tesla.Location = new System.Drawing.Point(2, 130);
+            this.labelControl5Tesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControl5Tesla.Name = "labelControl5Tesla";
+            this.labelControl5Tesla.Size = new System.Drawing.Size(175, 13);
+            this.labelControl5Tesla.TabIndex = 6;
+            this.labelControl5Tesla.Text = "(5) Control del motor (cada 3000km)";
+            // 
+            // labelControl4Tesla
+            // 
+            this.labelControl4Tesla.AutoSize = true;
+            this.labelControl4Tesla.Location = new System.Drawing.Point(2, 110);
+            this.labelControl4Tesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControl4Tesla.Name = "labelControl4Tesla";
+            this.labelControl4Tesla.Size = new System.Drawing.Size(229, 13);
+            this.labelControl4Tesla.TabIndex = 5;
+            this.labelControl4Tesla.Text = "(4) Control Sistema de Traccion (cada 3000km)";
+            // 
+            // labelControl3Tesla
+            // 
+            this.labelControl3Tesla.AutoSize = true;
+            this.labelControl3Tesla.Location = new System.Drawing.Point(2, 89);
+            this.labelControl3Tesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControl3Tesla.Name = "labelControl3Tesla";
+            this.labelControl3Tesla.Size = new System.Drawing.Size(245, 13);
+            this.labelControl3Tesla.TabIndex = 4;
+            this.labelControl3Tesla.Text = "(3) Control Sistema de Navegacion (cada 2500km)";
+            // 
+            // labelControl2Tesla
+            // 
+            this.labelControl2Tesla.AutoSize = true;
+            this.labelControl2Tesla.Location = new System.Drawing.Point(2, 66);
+            this.labelControl2Tesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControl2Tesla.Name = "labelControl2Tesla";
+            this.labelControl2Tesla.Size = new System.Drawing.Size(185, 13);
+            this.labelControl2Tesla.TabIndex = 3;
+            this.labelControl2Tesla.Text = "(2) Control de Baterias (cada 2000km)";
+            // 
+            // labelControl1Tesla
+            // 
+            this.labelControl1Tesla.AutoSize = true;
+            this.labelControl1Tesla.Location = new System.Drawing.Point(2, 44);
+            this.labelControl1Tesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControl1Tesla.Name = "labelControl1Tesla";
+            this.labelControl1Tesla.Size = new System.Drawing.Size(248, 13);
+            this.labelControl1Tesla.TabIndex = 2;
+            this.labelControl1Tesla.Text = "(1) Control Cinturones de Seguridad (cada 1000km)";
+            // 
+            // labelControlesTesla
+            // 
+            this.labelControlesTesla.AutoSize = true;
+            this.labelControlesTesla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelControlesTesla.Location = new System.Drawing.Point(79, 15);
+            this.labelControlesTesla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelControlesTesla.Name = "labelControlesTesla";
+            this.labelControlesTesla.Size = new System.Drawing.Size(82, 15);
+            this.labelControlesTesla.TabIndex = 1;
+            this.labelControlesTesla.Text = "Controles Tesla";
+            // 
+            // btnEscanearBuscarDuenio
+            // 
+            this.btnEscanearBuscarDuenio.Location = new System.Drawing.Point(608, 63);
+            this.btnEscanearBuscarDuenio.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEscanearBuscarDuenio.Name = "btnEscanearBuscarDuenio";
+            this.btnEscanearBuscarDuenio.Size = new System.Drawing.Size(56, 19);
+            this.btnEscanearBuscarDuenio.TabIndex = 39;
+            this.btnEscanearBuscarDuenio.Text = "Buscar";
+            this.btnEscanearBuscarDuenio.UseVisualStyleBackColor = true;
+            this.btnEscanearBuscarDuenio.Click += new System.EventHandler(this.btnEscanearBuscarDuenio_Click);
+            // 
+            // textBoxEscanearDuenio
+            // 
+            this.textBoxEscanearDuenio.Location = new System.Drawing.Point(444, 62);
+            this.textBoxEscanearDuenio.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxEscanearDuenio.Name = "textBoxEscanearDuenio";
+            this.textBoxEscanearDuenio.Size = new System.Drawing.Size(144, 20);
+            this.textBoxEscanearDuenio.TabIndex = 38;
+            // 
+            // labelEscanearNombreDuenio
+            // 
+            this.labelEscanearNombreDuenio.AutoSize = true;
+            this.labelEscanearNombreDuenio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEscanearNombreDuenio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelEscanearNombreDuenio.Location = new System.Drawing.Point(286, 66);
+            this.labelEscanearNombreDuenio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelEscanearNombreDuenio.Name = "labelEscanearNombreDuenio";
+            this.labelEscanearNombreDuenio.Size = new System.Drawing.Size(57, 17);
+            this.labelEscanearNombreDuenio.TabIndex = 37;
+            this.labelEscanearNombreDuenio.Text = "Duenio:";
             // 
             // listaTabsEscanear
             // 
@@ -750,11 +929,12 @@
             this.listaTabsEscanear.Controls.Add(this.tabEscanearTesla);
             this.listaTabsEscanear.Controls.Add(this.tabEscanearSpaceX);
             this.listaTabsEscanear.ItemSize = new System.Drawing.Size(0, 1);
-            this.listaTabsEscanear.Location = new System.Drawing.Point(269, 109);
+            this.listaTabsEscanear.Location = new System.Drawing.Point(289, 114);
+            this.listaTabsEscanear.Margin = new System.Windows.Forms.Padding(2);
             this.listaTabsEscanear.Multiline = true;
             this.listaTabsEscanear.Name = "listaTabsEscanear";
             this.listaTabsEscanear.SelectedIndex = 0;
-            this.listaTabsEscanear.Size = new System.Drawing.Size(657, 366);
+            this.listaTabsEscanear.Size = new System.Drawing.Size(590, 303);
             this.listaTabsEscanear.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.listaTabsEscanear.TabIndex = 15;
             this.listaTabsEscanear.TabStop = false;
@@ -765,143 +945,178 @@
             this.tabEscanearTesla.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabEscanearTesla.Controls.Add(this.tablaEscanearDatosTesla);
             this.tabEscanearTesla.Location = new System.Drawing.Point(4, 5);
+            this.tabEscanearTesla.Margin = new System.Windows.Forms.Padding(2);
             this.tabEscanearTesla.Name = "tabEscanearTesla";
-            this.tabEscanearTesla.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEscanearTesla.Size = new System.Drawing.Size(649, 357);
+            this.tabEscanearTesla.Padding = new System.Windows.Forms.Padding(2);
+            this.tabEscanearTesla.Size = new System.Drawing.Size(582, 294);
             this.tabEscanearTesla.TabIndex = 0;
             this.tabEscanearTesla.Text = "tabPage1";
             // 
             // tablaEscanearDatosTesla
             // 
+            this.tablaEscanearDatosTesla.AllowUserToAddRows = false;
+            this.tablaEscanearDatosTesla.AllowUserToDeleteRows = false;
+            this.tablaEscanearDatosTesla.AllowUserToResizeColumns = false;
+            this.tablaEscanearDatosTesla.AllowUserToResizeRows = false;
+            this.tablaEscanearDatosTesla.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.tablaEscanearDatosTesla.BackgroundColor = System.Drawing.SystemColors.Control;
             this.tablaEscanearDatosTesla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaEscanearDatosTesla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
+            this.ColumnaEscanearAnioTesla,
             this.ColumnaEscanearModeloTesla,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
+            this.ColumnaEscanearKmTesla,
+            this.ColumnaEscanearDuenioTesla,
+            this.ColumnaEscanearServicesTesla});
             this.tablaEscanearDatosTesla.Location = new System.Drawing.Point(0, 0);
+            this.tablaEscanearDatosTesla.Margin = new System.Windows.Forms.Padding(2);
             this.tablaEscanearDatosTesla.Name = "tablaEscanearDatosTesla";
+            this.tablaEscanearDatosTesla.RowHeadersVisible = false;
             this.tablaEscanearDatosTesla.RowHeadersWidth = 51;
             this.tablaEscanearDatosTesla.RowTemplate.Height = 24;
-            this.tablaEscanearDatosTesla.Size = new System.Drawing.Size(649, 357);
+            this.tablaEscanearDatosTesla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tablaEscanearDatosTesla.Size = new System.Drawing.Size(582, 294);
             this.tablaEscanearDatosTesla.TabIndex = 34;
             // 
-            // dataGridViewTextBoxColumn5
+            // ColumnaEscanearAnioTesla
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Año";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.ColumnaEscanearAnioTesla.HeaderText = "Anio";
+            this.ColumnaEscanearAnioTesla.MinimumWidth = 6;
+            this.ColumnaEscanearAnioTesla.Name = "ColumnaEscanearAnioTesla";
+            this.ColumnaEscanearAnioTesla.ReadOnly = true;
+            this.ColumnaEscanearAnioTesla.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearAnioTesla.Width = 50;
             // 
             // ColumnaEscanearModeloTesla
             // 
             this.ColumnaEscanearModeloTesla.HeaderText = "Modelo";
             this.ColumnaEscanearModeloTesla.MinimumWidth = 6;
             this.ColumnaEscanearModeloTesla.Name = "ColumnaEscanearModeloTesla";
-            this.ColumnaEscanearModeloTesla.Width = 125;
+            this.ColumnaEscanearModeloTesla.ReadOnly = true;
+            this.ColumnaEscanearModeloTesla.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // dataGridViewTextBoxColumn6
+            // ColumnaEscanearKmTesla
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Kilometraje";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.ColumnaEscanearKmTesla.HeaderText = "Kilometraje";
+            this.ColumnaEscanearKmTesla.MinimumWidth = 6;
+            this.ColumnaEscanearKmTesla.Name = "ColumnaEscanearKmTesla";
+            this.ColumnaEscanearKmTesla.ReadOnly = true;
+            this.ColumnaEscanearKmTesla.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearKmTesla.Width = 70;
             // 
-            // dataGridViewTextBoxColumn7
+            // ColumnaEscanearDuenioTesla
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Dueño";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 125;
+            this.ColumnaEscanearDuenioTesla.HeaderText = "Duenio";
+            this.ColumnaEscanearDuenioTesla.MinimumWidth = 6;
+            this.ColumnaEscanearDuenioTesla.Name = "ColumnaEscanearDuenioTesla";
+            this.ColumnaEscanearDuenioTesla.ReadOnly = true;
+            this.ColumnaEscanearDuenioTesla.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearDuenioTesla.Width = 125;
             // 
-            // dataGridViewTextBoxColumn8
+            // ColumnaEscanearServicesTesla
             // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Service/s";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 125;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaEscanearServicesTesla.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ColumnaEscanearServicesTesla.HeaderText = "Service/s y controles";
+            this.ColumnaEscanearServicesTesla.MinimumWidth = 6;
+            this.ColumnaEscanearServicesTesla.Name = "ColumnaEscanearServicesTesla";
+            this.ColumnaEscanearServicesTesla.ReadOnly = true;
+            this.ColumnaEscanearServicesTesla.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearServicesTesla.Width = 295;
             // 
             // tabEscanearSpaceX
             // 
             this.tabEscanearSpaceX.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabEscanearSpaceX.Controls.Add(this.tablaEscanearDatosSpaceX);
-            this.tabEscanearSpaceX.Controls.Add(this.button11);
             this.tabEscanearSpaceX.Location = new System.Drawing.Point(4, 5);
+            this.tabEscanearSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.tabEscanearSpaceX.Name = "tabEscanearSpaceX";
-            this.tabEscanearSpaceX.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEscanearSpaceX.Size = new System.Drawing.Size(649, 357);
+            this.tabEscanearSpaceX.Padding = new System.Windows.Forms.Padding(2);
+            this.tabEscanearSpaceX.Size = new System.Drawing.Size(582, 294);
             this.tabEscanearSpaceX.TabIndex = 1;
             this.tabEscanearSpaceX.Text = "tabPage2";
             // 
             // tablaEscanearDatosSpaceX
             // 
+            this.tablaEscanearDatosSpaceX.AllowUserToAddRows = false;
+            this.tablaEscanearDatosSpaceX.AllowUserToDeleteRows = false;
+            this.tablaEscanearDatosSpaceX.AllowUserToResizeColumns = false;
+            this.tablaEscanearDatosSpaceX.AllowUserToResizeRows = false;
+            this.tablaEscanearDatosSpaceX.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.tablaEscanearDatosSpaceX.BackgroundColor = System.Drawing.SystemColors.Control;
             this.tablaEscanearDatosSpaceX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaEscanearDatosSpaceX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13});
+            this.ColumnaEscanearAnioSpaceX,
+            this.ColumnaEscanearModeloSpaceX,
+            this.ColumnaEscanearHsVueloSpaceX,
+            this.ColumnaEscanearDuenioSpaceX,
+            this.ColumnaEscanearServicesSpaceX});
             this.tablaEscanearDatosSpaceX.Location = new System.Drawing.Point(0, 0);
+            this.tablaEscanearDatosSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.tablaEscanearDatosSpaceX.Name = "tablaEscanearDatosSpaceX";
+            this.tablaEscanearDatosSpaceX.ReadOnly = true;
+            this.tablaEscanearDatosSpaceX.RowHeadersVisible = false;
             this.tablaEscanearDatosSpaceX.RowHeadersWidth = 51;
             this.tablaEscanearDatosSpaceX.RowTemplate.Height = 24;
-            this.tablaEscanearDatosSpaceX.Size = new System.Drawing.Size(649, 357);
+            this.tablaEscanearDatosSpaceX.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tablaEscanearDatosSpaceX.ShowEditingIcon = false;
+            this.tablaEscanearDatosSpaceX.Size = new System.Drawing.Size(582, 294);
             this.tablaEscanearDatosSpaceX.TabIndex = 35;
             // 
-            // dataGridViewTextBoxColumn9
+            // ColumnaEscanearAnioSpaceX
             // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Año";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 125;
+            this.ColumnaEscanearAnioSpaceX.HeaderText = "Anio";
+            this.ColumnaEscanearAnioSpaceX.MinimumWidth = 6;
+            this.ColumnaEscanearAnioSpaceX.Name = "ColumnaEscanearAnioSpaceX";
+            this.ColumnaEscanearAnioSpaceX.ReadOnly = true;
+            this.ColumnaEscanearAnioSpaceX.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearAnioSpaceX.Width = 50;
             // 
-            // dataGridViewTextBoxColumn10
+            // ColumnaEscanearModeloSpaceX
             // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Modelo";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
+            this.ColumnaEscanearModeloSpaceX.HeaderText = "Modelo";
+            this.ColumnaEscanearModeloSpaceX.MinimumWidth = 6;
+            this.ColumnaEscanearModeloSpaceX.Name = "ColumnaEscanearModeloSpaceX";
+            this.ColumnaEscanearModeloSpaceX.ReadOnly = true;
+            this.ColumnaEscanearModeloSpaceX.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // dataGridViewTextBoxColumn11
+            // ColumnaEscanearHsVueloSpaceX
             // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "Kilometraje";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 125;
+            this.ColumnaEscanearHsVueloSpaceX.HeaderText = "Horas vuelo";
+            this.ColumnaEscanearHsVueloSpaceX.MinimumWidth = 6;
+            this.ColumnaEscanearHsVueloSpaceX.Name = "ColumnaEscanearHsVueloSpaceX";
+            this.ColumnaEscanearHsVueloSpaceX.ReadOnly = true;
+            this.ColumnaEscanearHsVueloSpaceX.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearHsVueloSpaceX.Width = 70;
             // 
-            // dataGridViewTextBoxColumn12
+            // ColumnaEscanearDuenioSpaceX
             // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "Dueño";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 125;
+            this.ColumnaEscanearDuenioSpaceX.HeaderText = "Duenio";
+            this.ColumnaEscanearDuenioSpaceX.MinimumWidth = 6;
+            this.ColumnaEscanearDuenioSpaceX.Name = "ColumnaEscanearDuenioSpaceX";
+            this.ColumnaEscanearDuenioSpaceX.ReadOnly = true;
+            this.ColumnaEscanearDuenioSpaceX.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearDuenioSpaceX.Width = 125;
             // 
-            // dataGridViewTextBoxColumn13
+            // ColumnaEscanearServicesSpaceX
             // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "Service/s";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 125;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(31, 403);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(220, 55);
-            this.button11.TabIndex = 1;
-            this.button11.Text = "Volver al menu principal";
-            this.button11.UseVisualStyleBackColor = true;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaEscanearServicesSpaceX.DefaultCellStyle = dataGridViewCellStyle2;
+            this.ColumnaEscanearServicesSpaceX.HeaderText = "Service/s y controles";
+            this.ColumnaEscanearServicesSpaceX.MinimumWidth = 6;
+            this.ColumnaEscanearServicesSpaceX.Name = "ColumnaEscanearServicesSpaceX";
+            this.ColumnaEscanearServicesSpaceX.ReadOnly = true;
+            this.ColumnaEscanearServicesSpaceX.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaEscanearServicesSpaceX.Width = 295;
             // 
             // labelEscanearTipoVehiculo
             // 
             this.labelEscanearTipoVehiculo.AutoSize = true;
             this.labelEscanearTipoVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEscanearTipoVehiculo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelEscanearTipoVehiculo.Location = new System.Drawing.Point(265, 30);
+            this.labelEscanearTipoVehiculo.Location = new System.Drawing.Point(286, 34);
+            this.labelEscanearTipoVehiculo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEscanearTipoVehiculo.Name = "labelEscanearTipoVehiculo";
-            this.labelEscanearTipoVehiculo.Size = new System.Drawing.Size(135, 20);
+            this.labelEscanearTipoVehiculo.Size = new System.Drawing.Size(116, 17);
             this.labelEscanearTipoVehiculo.TabIndex = 14;
             this.labelEscanearTipoVehiculo.Text = "Tipo de vehiculo:";
             // 
@@ -909,9 +1124,10 @@
             // 
             this.radiobtnEscanearOpcionSpaceX.AutoSize = true;
             this.radiobtnEscanearOpcionSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnEscanearOpcionSpaceX.Location = new System.Drawing.Point(581, 30);
+            this.radiobtnEscanearOpcionSpaceX.Location = new System.Drawing.Point(525, 34);
+            this.radiobtnEscanearOpcionSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnEscanearOpcionSpaceX.Name = "radiobtnEscanearOpcionSpaceX";
-            this.radiobtnEscanearOpcionSpaceX.Size = new System.Drawing.Size(88, 24);
+            this.radiobtnEscanearOpcionSpaceX.Size = new System.Drawing.Size(75, 21);
             this.radiobtnEscanearOpcionSpaceX.TabIndex = 13;
             this.radiobtnEscanearOpcionSpaceX.Text = "SpaceX";
             this.radiobtnEscanearOpcionSpaceX.UseVisualStyleBackColor = true;
@@ -921,9 +1137,10 @@
             this.radiobtnEscanearOpcionTesla.AutoSize = true;
             this.radiobtnEscanearOpcionTesla.Checked = true;
             this.radiobtnEscanearOpcionTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnEscanearOpcionTesla.Location = new System.Drawing.Point(473, 30);
+            this.radiobtnEscanearOpcionTesla.Location = new System.Drawing.Point(444, 34);
+            this.radiobtnEscanearOpcionTesla.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnEscanearOpcionTesla.Name = "radiobtnEscanearOpcionTesla";
-            this.radiobtnEscanearOpcionTesla.Size = new System.Drawing.Size(71, 24);
+            this.radiobtnEscanearOpcionTesla.Size = new System.Drawing.Size(61, 21);
             this.radiobtnEscanearOpcionTesla.TabIndex = 12;
             this.radiobtnEscanearOpcionTesla.TabStop = true;
             this.radiobtnEscanearOpcionTesla.Text = "Tesla";
@@ -931,9 +1148,10 @@
             // 
             // btnEscanearVolverMenu
             // 
-            this.btnEscanearVolverMenu.Location = new System.Drawing.Point(12, 430);
+            this.btnEscanearVolverMenu.Location = new System.Drawing.Point(8, 412);
+            this.btnEscanearVolverMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnEscanearVolverMenu.Name = "btnEscanearVolverMenu";
-            this.btnEscanearVolverMenu.Size = new System.Drawing.Size(220, 55);
+            this.btnEscanearVolverMenu.Size = new System.Drawing.Size(165, 45);
             this.btnEscanearVolverMenu.TabIndex = 2;
             this.btnEscanearVolverMenu.Text = "Volver al menu principal";
             this.btnEscanearVolverMenu.UseVisualStyleBackColor = true;
@@ -948,8 +1166,9 @@
             this.tabCargaVehiculos.Controls.Add(this.radiobtnCargaOpcionTesla);
             this.tabCargaVehiculos.Controls.Add(this.btnCargaVolverMenu);
             this.tabCargaVehiculos.Location = new System.Drawing.Point(4, 5);
+            this.tabCargaVehiculos.Margin = new System.Windows.Forms.Padding(2);
             this.tabCargaVehiculos.Name = "tabCargaVehiculos";
-            this.tabCargaVehiculos.Size = new System.Drawing.Size(1042, 491);
+            this.tabCargaVehiculos.Size = new System.Drawing.Size(908, 468);
             this.tabCargaVehiculos.TabIndex = 4;
             this.tabCargaVehiculos.Text = "tabPage2";
             // 
@@ -959,11 +1178,12 @@
             this.listaTabsCarga.Controls.Add(this.tabCargaTesla);
             this.listaTabsCarga.Controls.Add(this.tabCargaSpaceX);
             this.listaTabsCarga.ItemSize = new System.Drawing.Size(0, 1);
-            this.listaTabsCarga.Location = new System.Drawing.Point(87, 57);
+            this.listaTabsCarga.Location = new System.Drawing.Point(138, 76);
+            this.listaTabsCarga.Margin = new System.Windows.Forms.Padding(2);
             this.listaTabsCarga.Multiline = true;
             this.listaTabsCarga.Name = "listaTabsCarga";
             this.listaTabsCarga.SelectedIndex = 0;
-            this.listaTabsCarga.Size = new System.Drawing.Size(870, 366);
+            this.listaTabsCarga.Size = new System.Drawing.Size(652, 297);
             this.listaTabsCarga.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.listaTabsCarga.TabIndex = 15;
             this.listaTabsCarga.TabStop = false;
@@ -974,14 +1194,21 @@
             this.tabCargaTesla.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabCargaTesla.Controls.Add(this.tablaCargaDatosTesla);
             this.tabCargaTesla.Location = new System.Drawing.Point(4, 5);
+            this.tabCargaTesla.Margin = new System.Windows.Forms.Padding(2);
             this.tabCargaTesla.Name = "tabCargaTesla";
-            this.tabCargaTesla.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCargaTesla.Size = new System.Drawing.Size(862, 357);
+            this.tabCargaTesla.Padding = new System.Windows.Forms.Padding(2);
+            this.tabCargaTesla.Size = new System.Drawing.Size(644, 288);
             this.tabCargaTesla.TabIndex = 0;
             this.tabCargaTesla.Text = "tabPage1";
             // 
             // tablaCargaDatosTesla
             // 
+            this.tablaCargaDatosTesla.AllowUserToAddRows = false;
+            this.tablaCargaDatosTesla.AllowUserToDeleteRows = false;
+            this.tablaCargaDatosTesla.AllowUserToResizeColumns = false;
+            this.tablaCargaDatosTesla.AllowUserToResizeRows = false;
+            this.tablaCargaDatosTesla.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.tablaCargaDatosTesla.BackgroundColor = System.Drawing.SystemColors.Control;
             this.tablaCargaDatosTesla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaCargaDatosTesla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnaTeslaAño,
@@ -990,61 +1217,34 @@
             this.ColumnaTeslaDueño,
             this.ColumnaTeslaServices});
             this.tablaCargaDatosTesla.Location = new System.Drawing.Point(0, 0);
+            this.tablaCargaDatosTesla.Margin = new System.Windows.Forms.Padding(2);
             this.tablaCargaDatosTesla.Name = "tablaCargaDatosTesla";
+            this.tablaCargaDatosTesla.ReadOnly = true;
+            this.tablaCargaDatosTesla.RowHeadersVisible = false;
             this.tablaCargaDatosTesla.RowHeadersWidth = 51;
             this.tablaCargaDatosTesla.RowTemplate.Height = 24;
-            this.tablaCargaDatosTesla.Size = new System.Drawing.Size(862, 354);
+            this.tablaCargaDatosTesla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tablaCargaDatosTesla.Size = new System.Drawing.Size(644, 288);
             this.tablaCargaDatosTesla.TabIndex = 23;
-            // 
-            // ColumnaTeslaAño
-            // 
-            this.ColumnaTeslaAño.HeaderText = "Año";
-            this.ColumnaTeslaAño.MinimumWidth = 6;
-            this.ColumnaTeslaAño.Name = "ColumnaTeslaAño";
-            this.ColumnaTeslaAño.Width = 125;
-            // 
-            // ColumnaCargaModeloTesla
-            // 
-            this.ColumnaCargaModeloTesla.HeaderText = "Modelo";
-            this.ColumnaCargaModeloTesla.MinimumWidth = 6;
-            this.ColumnaCargaModeloTesla.Name = "ColumnaCargaModeloTesla";
-            this.ColumnaCargaModeloTesla.Width = 152;
-            // 
-            // ColumnaTeslaKilometraje
-            // 
-            this.ColumnaTeslaKilometraje.HeaderText = "Kilometraje";
-            this.ColumnaTeslaKilometraje.MinimumWidth = 6;
-            this.ColumnaTeslaKilometraje.Name = "ColumnaTeslaKilometraje";
-            this.ColumnaTeslaKilometraje.Width = 125;
-            // 
-            // ColumnaTeslaDueño
-            // 
-            this.ColumnaTeslaDueño.HeaderText = "Dueño";
-            this.ColumnaTeslaDueño.MinimumWidth = 6;
-            this.ColumnaTeslaDueño.Name = "ColumnaTeslaDueño";
-            this.ColumnaTeslaDueño.Width = 140;
-            // 
-            // ColumnaTeslaServices
-            // 
-            this.ColumnaTeslaServices.HeaderText = "Carga";
-            this.ColumnaTeslaServices.MinimumWidth = 6;
-            this.ColumnaTeslaServices.Name = "ColumnaTeslaServices";
-            this.ColumnaTeslaServices.Width = 125;
             // 
             // tabCargaSpaceX
             // 
             this.tabCargaSpaceX.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabCargaSpaceX.Controls.Add(this.tablaCargaDatosSpaceX);
-            this.tabCargaSpaceX.Controls.Add(this.button5);
             this.tabCargaSpaceX.Location = new System.Drawing.Point(4, 5);
+            this.tabCargaSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.tabCargaSpaceX.Name = "tabCargaSpaceX";
-            this.tabCargaSpaceX.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCargaSpaceX.Size = new System.Drawing.Size(862, 357);
+            this.tabCargaSpaceX.Padding = new System.Windows.Forms.Padding(2);
+            this.tabCargaSpaceX.Size = new System.Drawing.Size(644, 288);
             this.tabCargaSpaceX.TabIndex = 1;
             this.tabCargaSpaceX.Text = "tabPage2";
             // 
             // tablaCargaDatosSpaceX
             // 
+            this.tablaCargaDatosSpaceX.AllowUserToAddRows = false;
+            this.tablaCargaDatosSpaceX.AllowUserToDeleteRows = false;
+            this.tablaCargaDatosSpaceX.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.tablaCargaDatosSpaceX.BackgroundColor = System.Drawing.SystemColors.Control;
             this.tablaCargaDatosSpaceX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaCargaDatosSpaceX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1053,64 +1253,25 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.tablaCargaDatosSpaceX.Location = new System.Drawing.Point(0, 0);
+            this.tablaCargaDatosSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.tablaCargaDatosSpaceX.Name = "tablaCargaDatosSpaceX";
+            this.tablaCargaDatosSpaceX.ReadOnly = true;
+            this.tablaCargaDatosSpaceX.RowHeadersVisible = false;
             this.tablaCargaDatosSpaceX.RowHeadersWidth = 51;
             this.tablaCargaDatosSpaceX.RowTemplate.Height = 24;
-            this.tablaCargaDatosSpaceX.Size = new System.Drawing.Size(862, 357);
+            this.tablaCargaDatosSpaceX.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tablaCargaDatosSpaceX.Size = new System.Drawing.Size(644, 290);
             this.tablaCargaDatosSpaceX.TabIndex = 33;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Año";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // ColumnaCargaModeloSpaceX
-            // 
-            this.ColumnaCargaModeloSpaceX.HeaderText = "Modelo";
-            this.ColumnaCargaModeloSpaceX.MinimumWidth = 6;
-            this.ColumnaCargaModeloSpaceX.Name = "ColumnaCargaModeloSpaceX";
-            this.ColumnaCargaModeloSpaceX.Width = 152;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Horas vuelo";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Dueño";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 140;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Combustible";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(31, 403);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(220, 55);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Volver al menu principal";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // labelCargaTipoVehiculo
             // 
             this.labelCargaTipoVehiculo.AutoSize = true;
             this.labelCargaTipoVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCargaTipoVehiculo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelCargaTipoVehiculo.Location = new System.Drawing.Point(265, 27);
+            this.labelCargaTipoVehiculo.Location = new System.Drawing.Point(286, 34);
+            this.labelCargaTipoVehiculo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCargaTipoVehiculo.Name = "labelCargaTipoVehiculo";
-            this.labelCargaTipoVehiculo.Size = new System.Drawing.Size(135, 20);
+            this.labelCargaTipoVehiculo.Size = new System.Drawing.Size(116, 17);
             this.labelCargaTipoVehiculo.TabIndex = 14;
             this.labelCargaTipoVehiculo.Text = "Tipo de vehiculo:";
             // 
@@ -1118,9 +1279,10 @@
             // 
             this.radiobtnCargaOpcionSpaceX.AutoSize = true;
             this.radiobtnCargaOpcionSpaceX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnCargaOpcionSpaceX.Location = new System.Drawing.Point(581, 27);
+            this.radiobtnCargaOpcionSpaceX.Location = new System.Drawing.Point(525, 34);
+            this.radiobtnCargaOpcionSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnCargaOpcionSpaceX.Name = "radiobtnCargaOpcionSpaceX";
-            this.radiobtnCargaOpcionSpaceX.Size = new System.Drawing.Size(88, 24);
+            this.radiobtnCargaOpcionSpaceX.Size = new System.Drawing.Size(75, 21);
             this.radiobtnCargaOpcionSpaceX.TabIndex = 13;
             this.radiobtnCargaOpcionSpaceX.TabStop = true;
             this.radiobtnCargaOpcionSpaceX.Text = "SpaceX";
@@ -1131,9 +1293,10 @@
             // 
             this.radiobtnCargaOpcionTesla.AutoSize = true;
             this.radiobtnCargaOpcionTesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnCargaOpcionTesla.Location = new System.Drawing.Point(475, 27);
+            this.radiobtnCargaOpcionTesla.Location = new System.Drawing.Point(444, 34);
+            this.radiobtnCargaOpcionTesla.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnCargaOpcionTesla.Name = "radiobtnCargaOpcionTesla";
-            this.radiobtnCargaOpcionTesla.Size = new System.Drawing.Size(71, 24);
+            this.radiobtnCargaOpcionTesla.Size = new System.Drawing.Size(61, 21);
             this.radiobtnCargaOpcionTesla.TabIndex = 12;
             this.radiobtnCargaOpcionTesla.TabStop = true;
             this.radiobtnCargaOpcionTesla.Text = "Tesla";
@@ -1142,9 +1305,10 @@
             // 
             // btnCargaVolverMenu
             // 
-            this.btnCargaVolverMenu.Location = new System.Drawing.Point(12, 430);
+            this.btnCargaVolverMenu.Location = new System.Drawing.Point(8, 412);
+            this.btnCargaVolverMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnCargaVolverMenu.Name = "btnCargaVolverMenu";
-            this.btnCargaVolverMenu.Size = new System.Drawing.Size(220, 55);
+            this.btnCargaVolverMenu.Size = new System.Drawing.Size(165, 45);
             this.btnCargaVolverMenu.TabIndex = 2;
             this.btnCargaVolverMenu.Text = "Volver al menu principal";
             this.btnCargaVolverMenu.UseVisualStyleBackColor = true;
@@ -1155,7 +1319,6 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // imageList1
             // 
@@ -1166,9 +1329,10 @@
             // logoTesla
             // 
             this.logoTesla.Image = ((System.Drawing.Image)(resources.GetObject("logoTesla.Image")));
-            this.logoTesla.Location = new System.Drawing.Point(270, 27);
+            this.logoTesla.Location = new System.Drawing.Point(332, 27);
+            this.logoTesla.Margin = new System.Windows.Forms.Padding(2);
             this.logoTesla.Name = "logoTesla";
-            this.logoTesla.Size = new System.Drawing.Size(364, 160);
+            this.logoTesla.Size = new System.Drawing.Size(273, 130);
             this.logoTesla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoTesla.TabIndex = 12;
             this.logoTesla.TabStop = false;
@@ -1176,23 +1340,135 @@
             // logoSpaceX
             // 
             this.logoSpaceX.Image = ((System.Drawing.Image)(resources.GetObject("logoSpaceX.Image")));
-            this.logoSpaceX.Location = new System.Drawing.Point(697, 78);
+            this.logoSpaceX.Location = new System.Drawing.Point(688, 65);
+            this.logoSpaceX.Margin = new System.Windows.Forms.Padding(2);
             this.logoSpaceX.Name = "logoSpaceX";
-            this.logoSpaceX.Size = new System.Drawing.Size(321, 54);
+            this.logoSpaceX.Size = new System.Drawing.Size(241, 44);
             this.logoSpaceX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoSpaceX.TabIndex = 13;
             this.logoSpaceX.TabStop = false;
             // 
+            // ColumnaTeslaAño
+            // 
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaTeslaAño.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ColumnaTeslaAño.HeaderText = "Anio";
+            this.ColumnaTeslaAño.MinimumWidth = 6;
+            this.ColumnaTeslaAño.Name = "ColumnaTeslaAño";
+            this.ColumnaTeslaAño.ReadOnly = true;
+            this.ColumnaTeslaAño.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaTeslaAño.Width = 125;
+            // 
+            // ColumnaCargaModeloTesla
+            // 
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaCargaModeloTesla.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ColumnaCargaModeloTesla.HeaderText = "Modelo";
+            this.ColumnaCargaModeloTesla.MinimumWidth = 6;
+            this.ColumnaCargaModeloTesla.Name = "ColumnaCargaModeloTesla";
+            this.ColumnaCargaModeloTesla.ReadOnly = true;
+            this.ColumnaCargaModeloTesla.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaCargaModeloTesla.Width = 152;
+            // 
+            // ColumnaTeslaKilometraje
+            // 
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaTeslaKilometraje.DefaultCellStyle = dataGridViewCellStyle5;
+            this.ColumnaTeslaKilometraje.HeaderText = "Kilometraje";
+            this.ColumnaTeslaKilometraje.MinimumWidth = 6;
+            this.ColumnaTeslaKilometraje.Name = "ColumnaTeslaKilometraje";
+            this.ColumnaTeslaKilometraje.ReadOnly = true;
+            this.ColumnaTeslaKilometraje.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaTeslaKilometraje.Width = 125;
+            // 
+            // ColumnaTeslaDueño
+            // 
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaTeslaDueño.DefaultCellStyle = dataGridViewCellStyle6;
+            this.ColumnaTeslaDueño.HeaderText = "Duenio";
+            this.ColumnaTeslaDueño.MinimumWidth = 6;
+            this.ColumnaTeslaDueño.Name = "ColumnaTeslaDueño";
+            this.ColumnaTeslaDueño.ReadOnly = true;
+            this.ColumnaTeslaDueño.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaTeslaDueño.Width = 140;
+            // 
+            // ColumnaTeslaServices
+            // 
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaTeslaServices.DefaultCellStyle = dataGridViewCellStyle7;
+            this.ColumnaTeslaServices.HeaderText = "Carga";
+            this.ColumnaTeslaServices.MinimumWidth = 6;
+            this.ColumnaTeslaServices.Name = "ColumnaTeslaServices";
+            this.ColumnaTeslaServices.ReadOnly = true;
+            this.ColumnaTeslaServices.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaTeslaServices.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Anio";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // ColumnaCargaModeloSpaceX
+            // 
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnaCargaModeloSpaceX.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ColumnaCargaModeloSpaceX.HeaderText = "Modelo";
+            this.ColumnaCargaModeloSpaceX.MinimumWidth = 6;
+            this.ColumnaCargaModeloSpaceX.Name = "ColumnaCargaModeloSpaceX";
+            this.ColumnaCargaModeloSpaceX.ReadOnly = true;
+            this.ColumnaCargaModeloSpaceX.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnaCargaModeloSpaceX.Width = 152;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Horas vuelo";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Duenio";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn3.Width = 140;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Combustible";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1262, 753);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.logoSpaceX);
             this.Controls.Add(this.logoTesla);
             this.Controls.Add(this.listaTabsMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto 2 C# | Cagna - Ruiz - Villacorta";
@@ -1209,6 +1485,10 @@
             this.tabEliminarVehiculos.PerformLayout();
             this.tabEscanearVehiculos.ResumeLayout(false);
             this.tabEscanearVehiculos.PerformLayout();
+            this.panelEscanearServicesSpaceX.ResumeLayout(false);
+            this.panelEscanearServicesSpaceX.PerformLayout();
+            this.panelEscanearServicesTesla.ResumeLayout(false);
+            this.panelEscanearServicesTesla.PerformLayout();
             this.listaTabsEscanear.ResumeLayout(false);
             this.tabEscanearTesla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablaEscanearDatosTesla)).EndInit();
@@ -1249,8 +1529,6 @@
         private System.Windows.Forms.TabControl listaTabsAlta;
         private System.Windows.Forms.TabPage tabAltaTesla;
         private System.Windows.Forms.TabPage tabAltaSpaceX;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.ComboBox dropDownModeloTesla;
         private System.Windows.Forms.Label labelModeloTesla;
         private System.Windows.Forms.Label labelDueñoTesla;
@@ -1282,7 +1560,6 @@
         private System.Windows.Forms.TabControl listaTabsEscanear;
         private System.Windows.Forms.TabPage tabEscanearTesla;
         private System.Windows.Forms.TabPage tabEscanearSpaceX;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label labelEscanearTipoVehiculo;
         private System.Windows.Forms.RadioButton radiobtnEscanearOpcionSpaceX;
         private System.Windows.Forms.RadioButton radiobtnEscanearOpcionTesla;
@@ -1290,28 +1567,43 @@
         private System.Windows.Forms.TabControl listaTabsCarga;
         private System.Windows.Forms.TabPage tabCargaTesla;
         private System.Windows.Forms.TabPage tabCargaSpaceX;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label labelCargaTipoVehiculo;
         private System.Windows.Forms.RadioButton radiobtnCargaOpcionSpaceX;
         private System.Windows.Forms.RadioButton radiobtnCargaOpcionTesla;
         private System.Windows.Forms.Button btnCargaVolverMenu;
         private System.Windows.Forms.DataGridView tablaCargaDatosTesla;
         private System.Windows.Forms.DataGridView tablaCargaDatosSpaceX;
-        private System.Windows.Forms.TextBox textBoxEscanear;
-        private System.Windows.Forms.Label labelEscanearNombreDueño;
+        private System.Windows.Forms.TextBox textBoxEscanearDuenio;
+        private System.Windows.Forms.Label labelEscanearNombreDuenio;
         private System.Windows.Forms.DataGridView tablaEscanearDatosTesla;
-        private System.Windows.Forms.Button btnEscanearBuscarDueño;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearModeloTesla;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.Button btnEscanearBuscarDuenio;
         private System.Windows.Forms.DataGridView tablaEscanearDatosSpaceX;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.TextBox textBoxAnioSpaceX;
+        private System.Windows.Forms.TextBox textBoxEmpresaSpaceX;
+        private System.Windows.Forms.TextBox textBoxColorSpaceX;
+        private System.Windows.Forms.TextBox textBoxHsVueloActualSpaceX;
+        private System.Windows.Forms.ComboBox dropDownModeloSpaceX;
+        private System.Windows.Forms.Panel panelEscanearServicesTesla;
+        private System.Windows.Forms.Label labelControl4Tesla;
+        private System.Windows.Forms.Label labelControl3Tesla;
+        private System.Windows.Forms.Label labelControl2Tesla;
+        private System.Windows.Forms.Label labelControl1Tesla;
+        private System.Windows.Forms.Label labelControlesTesla;
+        private System.Windows.Forms.Label labelControl5Tesla;
+        private System.Windows.Forms.Panel panelEscanearServicesSpaceX;
+        private System.Windows.Forms.Label labelControl2SpaceX;
+        private System.Windows.Forms.Label labelControl1SpaceX;
+        private System.Windows.Forms.Label labelControlesSpaceX;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearAnioSpaceX;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearModeloSpaceX;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearHsVueloSpaceX;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearDuenioSpaceX;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearServicesSpaceX;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearAnioTesla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearModeloTesla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearKmTesla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearDuenioTesla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaEscanearServicesTesla;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaTeslaAño;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaCargaModeloTesla;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaTeslaKilometraje;
@@ -1322,11 +1614,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.TextBox textBoxAnioSpaceX;
-        private System.Windows.Forms.TextBox textBoxEmpresaSpaceX;
-        private System.Windows.Forms.TextBox textBoxColorSpaceX;
-        private System.Windows.Forms.TextBox textBoxHsVueloActualSpaceX;
-        private System.Windows.Forms.ComboBox dropDownModeloSpaceX;
     }
 }
 

@@ -34,79 +34,61 @@ namespace Proyecto2
         public int Service { get => service; set => service = value; }
 
         //--------------------- Escaneo ---------------------
+        //public (int, int, int, int, int, int) Escaneo()
         public string Escaneo()
         {
-            int cantControlCinturones = 0;
-            int cantControlBaterias = 0;
-            int cantControlSistemaNav = 0;
-            int cantControlSistemaTrac = 0;
-            int cantControlmotor = 0;
-            int kilometraje = kmActual;
+            int kmControlCinturones = 1000;
+            int kmControlBaterias = 2000;
+            int kmControlSistemaNav = 2500;
+            int kmControlSistemaTrac = 3000;
+            int kmControlMotor = 3000;
 
-            //cantidad de Service
-            int cantService = kmActual / service;
+            //cantidad de Services
+            int cantServices = kmActual / service;
+            int kmServiceActual;
+            string totalServices = "";
 
-            //Control Cinturones de Seguridad: cada 1000km
-            if (kilometraje >= 1000)
+            int ultimoControlCinturones = 0;
+            int ultimoControlBaterias = 0;
+            int ultimoControlSistemaNav = 0;
+            int ultimoControlSistemaTrac = 0;
+            int ultimoControlMotor = 0;
+
+            for (int numService = 1; numService <= cantServices; numService++)
             {
-                int kilometraje2 = kmActual;
-                while (kilometraje2 >= 1000)
+                kmServiceActual = numService * Service;
+                totalServices += $"Service {numService} ({kmServiceActual}km): ";
+
+                if (kmServiceActual >= kmControlCinturones && kmServiceActual - ultimoControlCinturones >= kmControlCinturones)
                 {
-                    cantControlCinturones += 1;
-                    kilometraje2 -= 1000;
+                    totalServices += "(1)";
+                    ultimoControlCinturones = kmServiceActual;
                 }
+                if (kmServiceActual >= kmControlBaterias && kmServiceActual - ultimoControlBaterias >= kmControlBaterias)
+                {
+                    totalServices += "(2)";
+                    ultimoControlBaterias = kmServiceActual;
+                }
+                if (kmServiceActual >= kmControlSistemaNav && kmServiceActual - ultimoControlSistemaNav >= kmControlSistemaNav)
+                {
+                    totalServices += "(3)";
+                    ultimoControlSistemaNav = kmServiceActual;
+                }
+                if (kmServiceActual >= kmControlSistemaTrac && kmServiceActual - ultimoControlSistemaTrac >= kmControlSistemaTrac)
+                {
+                    totalServices += "(4)";
+                    ultimoControlSistemaTrac = kmServiceActual;
+                }
+                if (kmServiceActual >= kmControlMotor && kmServiceActual - ultimoControlMotor >= kmControlMotor)
+                {
+                    totalServices += "(5)";
+                    ultimoControlMotor = kmServiceActual;
+                }
+
+                totalServices += "\n";
             }
 
-            //Control de Baterias: cada 2000km
-            if (kilometraje >= 2000)
-            {
-                int kilometraje2 = kmActual;
-                while (kilometraje2 >= 2000)
-                {
-                    cantControlBaterias += 1;
-                    kilometraje2 -= 2000;
-                }
-            }
-
-            //Control del Sistema de Navegacion: 2500km
-            if (kilometraje >= 2500)
-            {
-                int kilometraje2 = kmActual;
-                while (kilometraje2 >= 2500)
-                {
-                    cantControlSistemaNav += 1;
-                    kilometraje2 -= 2500;
-                }
-            }
-
-            //Control del Sistema de Traccion: cada 3000km.
-            if (kilometraje >= 3000)
-            {
-                int kilometraje2 = kmActual;
-                while (kilometraje2 >= 3000)
-                {
-                    cantControlSistemaTrac += 1;
-                    kilometraje2 -= 3000;
-                }
-            }
-
-            //Control del motor: cada 3000km.
-            if (kilometraje >= 3000)
-            {
-                int kilometraje2 = kmActual;
-                while (kilometraje2 >= 3000)
-                {
-                    cantControlmotor += 1;
-                    kilometraje2 -= 3000;
-                }
-            }
-
-            return $"Se realizaron {cantService} Service:\n" +
-                   $"\tControles de Cinturones de Seguridad = {cantControlCinturones}\n" +
-                   $"\tControles de Baterias = {cantControlBaterias}\n" +
-                   $"\tControles del Sistema de Navegacion = {cantControlSistemaNav}\n" +
-                   $"\tControles del Sistema Traccion = {cantControlSistemaTrac}\n" +
-                   $"\tControles del motor = {cantControlmotor}";
+            return totalServices;
         }
     }
     internal class ModeloX : Tesla
