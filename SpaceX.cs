@@ -37,17 +37,21 @@ namespace Proyecto2
         //--------------------- Escaneo ---------------------
         public string Escaneo()
         {
+            // Cada cuantas hs de vuelo se hace cada control
             int kmControlSistemaNav = 500;
             int kmControlSistemaProp = 1000;
 
-            //cantidad de Services
+            // Cantidad de Services
             int cantServices = hsVueloActual / service;
             int hsServiceActual;
             string totalServices = "";
 
+            // Guardan en que hs fue el ultimo control de cada uno
             int ultimoControlSistemaNav = 0;
             int ultimoControlSistemaProp = 0;
 
+            // En cada service checkea si pasaron las hs correspondientes para realizar cada control,
+            // en base a las variables ultimoControl, y si es asi se agrega a la string de services que devuelve el metodo
             for (int numService = 1; numService <= cantServices; numService++)
             {
                 hsServiceActual = numService * Service;
@@ -70,6 +74,8 @@ namespace Proyecto2
 
             return totalServices;
         }
+
+        //--------------------- Nivel de combustible ---------------------
         public string NivelCombustible()
         {
             int combustibleUsado = hsVueloActual % autonomia * 100 / Autonomia;

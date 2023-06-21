@@ -43,23 +43,27 @@ namespace Proyecto2
         //--------------------- Escaneo ---------------------
         public string Escaneo()
         {
+            // Cada cuantos km recorridos se hace cada control
             int kmControlCinturones = 1000;
             int kmControlBaterias = 2000;
             int kmControlSistemaNav = 2500;
             int kmControlSistemaTrac = 3000;
             int kmControlMotor = 3000;
 
-            //cantidad de Services
+            // Cantidad de Services
             int cantServices = kmActual / service;
             int kmServiceActual;
             string totalServices = "";
 
+            // Guardan en que kilometraje fue el ultimo control de cada uno
             int ultimoControlCinturones = 0;
             int ultimoControlBaterias = 0;
             int ultimoControlSistemaNav = 0;
             int ultimoControlSistemaTrac = 0;
             int ultimoControlMotor = 0;
 
+            // En cada service checkea si pasaron los km correspondientes para realizar cada control,
+            // en base a las variables ultimoControl, y si es asi se agrega a la string de services que devuelve el metodo
             for (int numService = 1; numService <= cantServices; numService++)
             {
                 kmServiceActual = numService * Service;
@@ -97,6 +101,7 @@ namespace Proyecto2
             return totalServices;
         }
 
+        //--------------------- Nivel de bateria ---------------------
         public string NivelBateria()
         {
             int bateriaUsada = kmActual % autonomia * 100 / Autonomia;
