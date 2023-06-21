@@ -362,6 +362,7 @@ namespace Proyecto2
                         {
                             int anio = ListaTeslas[indexTesla].Anio;
                             string modelo = ListaTeslas[indexTesla].GetType().Name;
+                            int asientos = ListaTeslas[indexTesla].Asientos;
                             int kmActual = ListaTeslas[indexTesla].KmActual;
                             string duenio = ListaTeslas[indexTesla].Duenio;
 
@@ -374,9 +375,10 @@ namespace Proyecto2
 
                             if (tablaEscanearDatosTesla.Rows.Count != 0)
                             {
-                                tablaEscanearDatosTesla.Rows.RemoveAt(0);
+                                tablaEscanearDatosTesla.Rows.Clear();
                             }
-                            tablaEscanearDatosTesla.Rows.Add(anio, modelo, kmActual, duenio, totalServices);
+
+                            tablaEscanearDatosTesla.Rows.Add(anio, modelo, asientos, kmActual + "km", duenio, totalServices);
                         }
                         else
                         {
@@ -429,7 +431,7 @@ namespace Proyecto2
                             {
                                 tablaEscanearDatosSpaceX.Rows.Clear();
                             }
-                            tablaEscanearDatosSpaceX.Rows.Add(anio, modelo, hsVuelo, empresaDuenia, totalServices);
+                            tablaEscanearDatosSpaceX.Rows.Add(anio, modelo, hsVuelo + "hs", empresaDuenia, totalServices);
 
                         }
                         else

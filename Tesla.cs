@@ -15,9 +15,10 @@ namespace Proyecto2
         private string duenio;
         private int autonomia;
         private int service;
+        private int asientos;
 
         //-------------------- Constructor --------------------
-        public Tesla(int anio, int kmActual, string color, string duenio, int autonomia, int service)
+        public Tesla(int anio, int kmActual, string color, string duenio, int autonomia, int service, int asientos = 0)
         {
             this.anio = anio;
             this.kmActual = kmActual;
@@ -25,6 +26,7 @@ namespace Proyecto2
             this.duenio = duenio;
             this.autonomia = autonomia;
             this.service = service;
+            this.asientos = asientos;
         }
 
 
@@ -35,6 +37,7 @@ namespace Proyecto2
         public string Duenio { get => duenio; set => duenio = value; }
         public int Autonomia { get => autonomia; }
         public int Service { get => service; set => service = value; }
+        public int Asientos { get => asientos; }
 
 
         //--------------------- Escaneo ---------------------
@@ -106,13 +109,11 @@ namespace Proyecto2
     {
         private int asientos;
         //-------------------- Constructor --------------------
-        public ModeloX(int anio, int kmActual, string color, string duenio, int autonomia = 560, int service = 1000, int asientos = 7) : base(anio, kmActual, color, duenio, autonomia, service)
+        public ModeloX(int anio, int kmActual, string color, string duenio, int autonomia = 560, int service = 1000, int asientos = 7) : base(anio, kmActual, color, duenio, autonomia, service, asientos)
         {
             this.asientos = asientos;
         }
 
-        //---------------- Metodos getters ----------------
-        public int Asientos { get => asientos; }
     }
 
     internal class ModeloS : Tesla
@@ -120,13 +121,10 @@ namespace Proyecto2
         private int asientos;
 
         //-------------------- Constructor --------------------
-        public ModeloS(int anio, int kmActual, string color, string duenio, int autonomia = 650, int service = 2000, int asientos = 5) : base(anio, kmActual, color, duenio, autonomia, service)
+        public ModeloS(int anio, int kmActual, string color, string duenio, int autonomia = 650, int service = 2000, int asientos = 5) : base(anio, kmActual, color, duenio, autonomia, service, asientos)
         {
             this.asientos = asientos;
         }
-
-        //---------------- Metodos getters ----------------
-        public int Asientos { get => asientos; }
 
     }
     internal class Cybertruck : Tesla
@@ -134,12 +132,10 @@ namespace Proyecto2
         private int asientos;
 
         //-------------------- Constructor --------------------
-        public Cybertruck(int anio, int kmActual, string color, string duenio, int autonomia = 800, int service = 3000, int asientos = 6) : base(anio, kmActual, color, duenio, autonomia, service)
+        public Cybertruck(int anio, int kmActual, string color, string duenio, int autonomia = 800, int service = 3000, int asientos = 6) : base(anio, kmActual, color, duenio, autonomia, service, asientos)
         {
             this.asientos = asientos;
         }
 
-        //---------------- Metodos getters ----------------
-        public int Asientos { get => asientos; }
     }
 }
