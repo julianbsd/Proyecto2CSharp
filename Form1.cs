@@ -61,37 +61,33 @@ namespace Proyecto2
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
+            listaTabsAlta.Visible = false;
+            radiobtnAltaOpcionTesla.Checked = false;
+            radiobtnAltaOpcionSpaceX.Checked = false;
             listaTabsMenu.SelectedTab = tabMenuPrincipal;
         }
 
-        private void radiobtnOpcionTesla_CheckedChanged(object sender, EventArgs e)
+        private void radiobtnAltaOpcionTesla_CheckedChanged(object sender, EventArgs e)
         {
             if (radiobtnAltaOpcionTesla.Checked)
             {
                 listaTabsAlta.Visible = true;
                 listaTabsAlta.SelectedTab = tabAltaTesla;
             }
-            else
-            {
-                listaTabsAlta.Visible = false;
-            }
         }
 
-        private void radiobtnOpcionSpaceX_CheckedChanged(object sender, EventArgs e)
+        private void radiobtnAltaOpcionSpaceX_CheckedChanged(object sender, EventArgs e)
         {
             if (radiobtnAltaOpcionSpaceX.Checked)
             {
                 listaTabsAlta.Visible = true;
                 listaTabsAlta.SelectedTab = tabAltaSpaceX;
             }
-            else
-            {
-                listaTabsAlta.Visible = false;
-            }
         }
 
         private void btnEliminarMenuPrincipal_Click(object sender, EventArgs e)
         {
+            textBoxEliminarDueño.Text = string.Empty;
             listaTabsMenu.SelectedTab = tabMenuPrincipal;
         }
 
@@ -189,11 +185,16 @@ namespace Proyecto2
 
         private void btnEscanearVolverMenu_Click(object sender, EventArgs e)
         {
+            textBoxEscanearDuenio.Text = string.Empty;
+            listaTabsEscanear.Visible = false;
+            panelEscanearServicesTesla.Visible = false;
+            panelEscanearServicesSpaceX.Visible = false;
             listaTabsMenu.SelectedTab = tabMenuPrincipal;
         }
 
         private void btnCargaVolverMenu_Click(object sender, EventArgs e)
         {
+            listaTabsCarga.Visible = false;
             listaTabsMenu.SelectedTab = tabMenuPrincipal;
         }
 
