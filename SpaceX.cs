@@ -12,15 +12,17 @@ namespace Proyecto2
         private int hsVueloActual;
         private string color;
         private string empresaDuenia;
+        private int autonomia;
         private int service;
 
         //-------------------- Constructor --------------------
-        public SpaceX(int anio, int hsVueloActual, string color, string empresaDuenia, int service)
+        public SpaceX(int anio, int hsVueloActual, string color, string empresaDuenia, int autonomia, int service)
         {
             this.anio = anio;
             this.hsVueloActual = hsVueloActual;
             this.color = color;
             this.empresaDuenia = empresaDuenia;
+            this.autonomia = autonomia;
             this.service = service;
         }
 
@@ -29,6 +31,7 @@ namespace Proyecto2
         public int HsVueloActual { get => hsVueloActual; set => hsVueloActual = value; }
         public string Color { get => color; set => color = value; }
         public string EmpresaDuenia { get => empresaDuenia; set => empresaDuenia = value; }
+        public int Autonomia { get => autonomia; }
         public int Service { get => service; }
 
         //--------------------- Escaneo ---------------------
@@ -67,19 +70,23 @@ namespace Proyecto2
 
             return totalServices;
         }
+        public string NivelCombustible()
+        {
+            int combustibleUsado = hsVueloActual % autonomia * 100 / Autonomia;
+            int porcentajeCombustible = 100 - combustibleUsado;
+
+            return $"{porcentajeCombustible}%";
+        }
     }
     internal class Falcon9 : SpaceX
     {
         private int autonomia;
 
         //-------------------- Constructor --------------------
-        public Falcon9(int anio, int hsVueloActual, string color, string empresaDuenia, int autonomia = 200, int service = 400) : base(anio, hsVueloActual, color, empresaDuenia, service)
+        public Falcon9(int anio, int hsVueloActual, string color, string empresaDuenia, int autonomia = 200, int service = 400) : base(anio, hsVueloActual, color, empresaDuenia, autonomia, service)
         {
             this.autonomia = autonomia;
         }
-
-        //---------------- Metodos getters ----------------
-        public int Autonomia { get => autonomia; }
     }
 
     internal class Starship : SpaceX
@@ -87,13 +94,10 @@ namespace Proyecto2
         private int autonomia;
 
         //-------------------- Constructor --------------------
-        public Starship(int anio, int hsVueloActual, string color, string empresaDuenia, int autonomia = 500, int service = 1000) : base(anio, hsVueloActual, color, empresaDuenia, service)
+        public Starship(int anio, int hsVueloActual, string color, string empresaDuenia, int autonomia = 500, int service = 1000) : base(anio, hsVueloActual, color, empresaDuenia, autonomia, service)
         {
             this.autonomia = autonomia;
         }
-
-        //---------------- Metodos getters ----------------
-        public int Autonomia { get => autonomia; }
     }
 
 }

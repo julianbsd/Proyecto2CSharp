@@ -13,15 +13,17 @@ namespace Proyecto2
         private int kmActual;
         private string color;
         private string duenio;
+        private int autonomia;
         private int service;
 
         //-------------------- Constructor --------------------
-        public Tesla(int anio, int kmActual, string color, string duenio, int service = 0)
+        public Tesla(int anio, int kmActual, string color, string duenio, int autonomia, int service)
         {
             this.anio = anio;
             this.kmActual = kmActual;
             this.color = color;
             this.duenio = duenio;
+            this.autonomia = autonomia;
             this.service = service;
         }
 
@@ -31,10 +33,11 @@ namespace Proyecto2
         public int KmActual { get => kmActual; set => kmActual = value; }
         public string Color { get => color; set => color = value; }
         public string Duenio { get => duenio; set => duenio = value; }
+        public int Autonomia { get => autonomia; }
         public int Service { get => service; set => service = value; }
 
+
         //--------------------- Escaneo ---------------------
-        //public (int, int, int, int, int, int) Escaneo()
         public string Escaneo()
         {
             int kmControlCinturones = 1000;
@@ -90,54 +93,53 @@ namespace Proyecto2
 
             return totalServices;
         }
+
+        public string NivelBateria()
+        {
+            int bateriaUsada = kmActual % autonomia * 100 / Autonomia;
+            int porcentajeBateria = 100 - bateriaUsada;
+
+            return $"{porcentajeBateria}%";
+        }
     }
     internal class ModeloX : Tesla
     {
-        private int autonomia;
         private int asientos;
         //-------------------- Constructor --------------------
-        public ModeloX(int anio, int kmActual, string color, string duenio, int autonomia = 560, int asientos = 7, int service = 1000) : base(anio, kmActual, color, duenio, service)
+        public ModeloX(int anio, int kmActual, string color, string duenio, int autonomia = 560, int service = 1000, int asientos = 7) : base(anio, kmActual, color, duenio, autonomia, service)
         {
-            this.autonomia = autonomia;
             this.asientos = asientos;
         }
 
         //---------------- Metodos getters ----------------
-        public int Autonomia { get => autonomia; }
         public int Asientos { get => asientos; }
     }
 
     internal class ModeloS : Tesla
     {
-        private int autonomia;
         private int asientos;
 
         //-------------------- Constructor --------------------
-        public ModeloS(int anio, int kmActual, string color, string duenio, int autonomia = 650, int asientos = 5, int service = 2000) : base(anio, kmActual, color, duenio, service)
+        public ModeloS(int anio, int kmActual, string color, string duenio, int autonomia = 650, int service = 2000, int asientos = 5) : base(anio, kmActual, color, duenio, autonomia, service)
         {
-            this.autonomia = autonomia;
             this.asientos = asientos;
         }
 
         //---------------- Metodos getters ----------------
-        public double Autonomia { get => autonomia; }
         public int Asientos { get => asientos; }
 
     }
     internal class Cybertruck : Tesla
     {
-        private int autonomia;
         private int asientos;
 
         //-------------------- Constructor --------------------
-        public Cybertruck(int anio, int kmActual, string color, string duenio, int autonomia = 800, int asientos = 6, int service = 3000) : base(anio, kmActual, color, duenio, service)
+        public Cybertruck(int anio, int kmActual, string color, string duenio, int autonomia = 800, int service = 3000, int asientos = 6) : base(anio, kmActual, color, duenio, autonomia, service)
         {
-            this.autonomia = autonomia;
             this.asientos = asientos;
         }
 
         //---------------- Metodos getters ----------------
-        public int Autonomia { get => autonomia; }
         public int Asientos { get => asientos; }
     }
 }

@@ -99,76 +99,82 @@ namespace Proyecto2
         {
             string duenioABuscar = textBoxEliminarDueño.Text;
 
-            // Si esta seleccionada la opcion Tesla
-            if (radiobtnEliminarOpcionTesla.Checked)
+            if (!String.IsNullOrEmpty(duenioABuscar))
             {
-                if (ListaTeslas.Count > 0)
+                // Si esta seleccionada la opcion Tesla
+                if (radiobtnEliminarOpcionTesla.Checked)
                 {
-                    int indexTesla = 0;
-                    bool encontrado = false;
-
-                    for (int index = 0; index < ListaTeslas.Count; index++)
+                    if (ListaTeslas.Count > 0)
                     {
-                        if (ListaTeslas[index].Duenio == duenioABuscar)
+                        int indexTesla = 0;
+                        bool encontrado = false;
+
+                        for (int index = 0; index < ListaTeslas.Count; index++)
                         {
-                            encontrado = true;
-                            indexTesla = index;
-                            break;
+                            if (ListaTeslas[index].Duenio == duenioABuscar)
+                            {
+                                encontrado = true;
+                                indexTesla = index;
+                                break;
+                            }
                         }
-                    }
 
-                    if (encontrado)
-                    {
-                        ListaTeslas.RemoveAt(indexTesla);
-                        MessageBox.Show("El Tesla fue eliminado con exito");
+                        if (encontrado)
+                        {
+                            ListaTeslas.RemoveAt(indexTesla);
+                            MessageBox.Show("El Tesla fue eliminado con exito");
+                        }
+                        else
+                        {
+                            MessageBox.Show("El Tesla no fue encontrado");
+                        }
+
                     }
                     else
                     {
-                        MessageBox.Show("El Tesla no fue encontrado");
+                        MessageBox.Show("Error: No hay Teslas dados de alta");
                     }
-
                 }
+
+                // Si esta seleccionada la opcion SpaceX
                 else
                 {
-                    MessageBox.Show("Error: No hay Teslas dados de alta");
+                    if (ListaSpaceX.Count > 0)
+                    {
+                        int indexSpaceX = 0;
+                        bool encontrado = false;
+
+                        for (int index = 0; index < ListaSpaceX.Count; index++)
+                        {
+                            if (ListaSpaceX[index].EmpresaDuenia == duenioABuscar)
+                            {
+                                encontrado = true;
+                                indexSpaceX = index;
+                                break;
+                            }
+                        }
+
+                        if (encontrado)
+                        {
+                            ListaSpaceX.RemoveAt(indexSpaceX);
+                            MessageBox.Show("El SpaceX fue eliminado con exito");
+                        }
+                        else
+                        {
+                            MessageBox.Show("El SpaceX no fue encontrado");
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: No hay SpaceX dados de alta");
+                    }
                 }
             }
-
-            // Si esta seleccionada la opcion SpaceX
             else
             {
-                if (ListaSpaceX.Count > 0)
-                {
-                    int indexSpaceX = 0;
-                    bool encontrado = false;
-
-                    for (int index = 0; index < ListaSpaceX.Count; index++)
-                    {
-                        if (ListaSpaceX[index].EmpresaDuenia == duenioABuscar)
-                        {
-                            encontrado = true;
-                            indexSpaceX = index;
-                            break;
-                        }
-                    }
-
-                    if (encontrado)
-                    {
-                        ListaSpaceX.RemoveAt(indexSpaceX);
-                        MessageBox.Show("El SpaceX fue eliminado con exito");
-                    }
-                    else
-                    {
-                        MessageBox.Show("El SpaceX no fue encontrado");
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show("Error: No hay SpaceX dados de alta");
-                }
+                MessageBox.Show("Error: duenio invalido");
             }
-
         }
 
         private void btnMenuEscanear_Click(object sender, EventArgs e)
@@ -189,32 +195,6 @@ namespace Proyecto2
         private void btnCargaVolverMenu_Click(object sender, EventArgs e)
         {
             listaTabsMenu.SelectedTab = tabMenuPrincipal;
-        }
-
-        private void radiobtnCargaOpcionTesla_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radiobtnCargaOpcionTesla.Checked)
-            {
-                listaTabsCarga.Visible = true;
-                listaTabsCarga.SelectedTab = tabCargaTesla;
-            }
-            else
-            {
-                listaTabsCarga.Visible = false;
-            }
-        }
-
-        private void radiobtnCargaOpcionSpaceX_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radiobtnCargaOpcionSpaceX.Checked)
-            {
-                listaTabsCarga.Visible = true;
-                listaTabsCarga.SelectedTab = tabCargaSpaceX;
-            }
-            else
-            {
-                listaTabsCarga.Visible = false;
-            }
         }
 
         private void btnAltaTeslaGuardar_Click(object sender, EventArgs e)
@@ -358,110 +338,169 @@ namespace Proyecto2
         {
             string duenioABuscar = textBoxEscanearDuenio.Text;
 
-            // Si esta seleccionada la opcion Tesla
-            if (radiobtnEscanearOpcionTesla.Checked)
+            if (!String.IsNullOrEmpty(duenioABuscar))
             {
-                if (ListaTeslas.Count > 0)
+                // Si esta seleccionada la opcion Tesla
+                if (radiobtnEscanearOpcionTesla.Checked)
                 {
-                    int indexTesla = 0;
-                    bool encontrado = false;
-
-                    for (int index = 0; index < ListaTeslas.Count; index++)
+                    if (ListaTeslas.Count > 0)
                     {
-                        if (ListaTeslas[index].Duenio == duenioABuscar)
+                        int indexTesla = 0;
+                        bool encontrado = false;
+
+                        for (int index = 0; index < ListaTeslas.Count; index++)
                         {
-                            encontrado = true;
-                            indexTesla = index;
-                            break;
+                            if (ListaTeslas[index].Duenio == duenioABuscar)
+                            {
+                                encontrado = true;
+                                indexTesla = index;
+                                break;
+                            }
                         }
-                    }
 
-                    if (encontrado)
-                    {
-                        int anio = ListaTeslas[indexTesla].Anio;
-                        string modelo = ListaTeslas[indexTesla].GetType().Name;
-                        int kmActual = ListaTeslas[indexTesla].KmActual;
-                        string duenio = ListaTeslas[indexTesla].Duenio;
-
-                        listaTabsEscanear.Visible = true;
-                        listaTabsEscanear.SelectedTab = tabEscanearTesla;
-                        panelEscanearServicesSpaceX.Visible = false;
-                        panelEscanearServicesTesla.Visible = true;
-
-                        string totalServices = ListaTeslas[indexTesla].Escaneo();
-
-                        if (tablaEscanearDatosTesla.Rows.Count != 0)
+                        if (encontrado)
                         {
-                            tablaEscanearDatosTesla.Rows.RemoveAt(0);
+                            int anio = ListaTeslas[indexTesla].Anio;
+                            string modelo = ListaTeslas[indexTesla].GetType().Name;
+                            int kmActual = ListaTeslas[indexTesla].KmActual;
+                            string duenio = ListaTeslas[indexTesla].Duenio;
+
+                            listaTabsEscanear.Visible = true;
+                            listaTabsEscanear.SelectedTab = tabEscanearTesla;
+                            panelEscanearServicesSpaceX.Visible = false;
+                            panelEscanearServicesTesla.Visible = true;
+
+                            string totalServices = ListaTeslas[indexTesla].Escaneo();
+
+                            if (tablaEscanearDatosTesla.Rows.Count != 0)
+                            {
+                                tablaEscanearDatosTesla.Rows.RemoveAt(0);
+                            }
+                            tablaEscanearDatosTesla.Rows.Add(anio, modelo, kmActual, duenio, totalServices);
                         }
-                        tablaEscanearDatosTesla.Rows.Add(anio, modelo, kmActual, duenio, totalServices);
+                        else
+                        {
+                            MessageBox.Show("El Tesla no fue encontrado");
+                        }
+
                     }
                     else
                     {
-                        MessageBox.Show("El Tesla no fue encontrado");
+                        MessageBox.Show("Error: No hay Teslas dados de alta");
                     }
-
                 }
+
+                // Si esta seleccionada la opcion SpaceX
                 else
                 {
-                    MessageBox.Show("Error: No hay Teslas dados de alta");
+                    if (ListaSpaceX.Count > 0)
+                    {
+                        int indexSpaceX = 0;
+                        bool encontrado = false;
+
+                        for (int index = 0; index < ListaSpaceX.Count; index++)
+                        {
+                            if (ListaSpaceX[index].EmpresaDuenia == duenioABuscar)
+                            {
+                                encontrado = true;
+                                indexSpaceX = index;
+                                break;
+                            }
+                        }
+
+                        if (encontrado)
+                        {
+                            int anio = ListaSpaceX[indexSpaceX].Anio;
+                            string modelo = ListaSpaceX[indexSpaceX].GetType().Name;
+                            int hsVuelo = ListaSpaceX[indexSpaceX].HsVueloActual;
+                            string empresaDuenia = ListaSpaceX[indexSpaceX].EmpresaDuenia;
+
+                            ListaSpaceX[indexSpaceX].Escaneo();
+
+                            listaTabsEscanear.Visible = true;
+                            listaTabsEscanear.SelectedTab = tabEscanearSpaceX;
+                            panelEscanearServicesTesla.Visible = false;
+                            panelEscanearServicesSpaceX.Location = new Point(8, 24);
+                            panelEscanearServicesSpaceX.Visible = true;
+
+                            string totalServices = ListaSpaceX[indexSpaceX].Escaneo();
+
+                            if (tablaEscanearDatosSpaceX.Rows.Count != 0)
+                            {
+                                tablaEscanearDatosSpaceX.Rows.Clear();
+                            }
+                            tablaEscanearDatosSpaceX.Rows.Add(anio, modelo, hsVuelo, empresaDuenia, totalServices);
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("El SpaceX no fue encontrado");
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: No hay SpaceX dados de alta");
+                    }
                 }
             }
-
-            // Si esta seleccionada la opcion SpaceX
             else
             {
-                if (ListaSpaceX.Count > 0)
-                {
-                    int indexSpaceX = 0;
-                    bool encontrado = false;
-
-                    for (int index = 0; index < ListaSpaceX.Count; index++)
-                    {
-                        if (ListaSpaceX[index].EmpresaDuenia == duenioABuscar)
-                        {
-                            encontrado = true;
-                            indexSpaceX = index;
-                            break;
-                        }
-                    }
-
-                    if (encontrado)
-                    {
-                        int anio = ListaSpaceX[indexSpaceX].Anio;
-                        string modelo = ListaSpaceX[indexSpaceX].GetType().Name;
-                        int hsVuelo = ListaSpaceX[indexSpaceX].HsVueloActual;
-                        string empresaDuenia = ListaSpaceX[indexSpaceX].EmpresaDuenia;
-
-                        ListaSpaceX[indexSpaceX].Escaneo();
-
-                        listaTabsEscanear.Visible = true;
-                        listaTabsEscanear.SelectedTab = tabEscanearSpaceX;
-                        panelEscanearServicesTesla.Visible= false;
-                        panelEscanearServicesSpaceX.Location = new Point(8, 24);
-                        panelEscanearServicesSpaceX.Visible = true;
-
-                        string totalServices = ListaSpaceX[indexSpaceX].Escaneo();
-
-                        if (tablaEscanearDatosSpaceX.Rows.Count != 0)
-                        {
-                            tablaEscanearDatosSpaceX.Rows.RemoveAt(0);
-                        }
-                        tablaEscanearDatosSpaceX.Rows.Add(anio, modelo, hsVuelo, empresaDuenia, totalServices);
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("El SpaceX no fue encontrado");
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show("Error: No hay SpaceX dados de alta");
-                }
+                MessageBox.Show("Error: duenio invalido");
             }
         }
 
+        private void btnCargaMostrarVehiculos_Click(object sender, EventArgs e)
+        {
+            if (radiobtnCargaOpcionTesla.Checked)
+            {
+                if (ListaTeslas.Count > 0)
+                {
+                    listaTabsCarga.SelectedTab = tabCargaTesla;
+                    listaTabsCarga.Visible = true;
+
+                    if (tablaCargaDatosTesla.Rows.Count != 0)
+                    {
+                        tablaCargaDatosTesla.Rows.Clear();
+                    }
+
+                    foreach (Tesla tesla in ListaTeslas)
+                    {
+                        tablaCargaDatosTesla.Rows.Add(tesla.Anio, tesla.GetType().Name, tesla.Duenio, tesla.Autonomia + "km", tesla.KmActual + "km", tesla.NivelBateria());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error: no hay Teslas dados de alta");
+                }
+
+            }
+            else if (radiobtnCargaOpcionSpaceX.Checked)
+            {
+                if (ListaSpaceX.Count > 0)
+                {
+                    listaTabsCarga.SelectedTab = tabCargaSpaceX;
+                    listaTabsCarga.Visible = true;
+
+                    if (tablaCargaDatosSpaceX.Rows.Count != 0)
+                    {
+                        tablaCargaDatosSpaceX.Rows.Clear();
+                    }
+
+                    foreach (SpaceX spaceX in ListaSpaceX)
+                    {
+                        tablaCargaDatosSpaceX.Rows.Add(spaceX.Anio, spaceX.GetType().Name, spaceX.EmpresaDuenia, spaceX.Autonomia + "hs", spaceX.HsVueloActual + "hs", spaceX.NivelCombustible());
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Error: no hay SpaceX dados de alta");
+                }
+
+            }
+            else
+                MessageBox.Show("Error: seleccione el tipo de vehiculo");
+        }
     }
 }
